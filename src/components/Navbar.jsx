@@ -19,7 +19,6 @@ import {
   QueueMusic as QueueMusicIcon,
   LocationCity as LocationCityIcon,
   Mic as MicIcon,
-  Headphones as HeadphonesIcon,
   Facebook as FacebookIcon,
   Email as EmailIcon,
   ChevronRight as ChevronRightIcon,
@@ -210,10 +209,10 @@ export default function Navbar() {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: scrolled ? 'rgba(9, 9, 11, 0.92)' : 'rgba(9, 9, 11, 0.65)',
+          backgroundColor: scrolled ? 'rgba(11, 11, 11, 0.94)' : 'rgba(11, 11, 11, 0.7)',
           backdropFilter: 'blur(20px)',
           borderBottom: '1px solid',
-          borderColor: scrolled ? 'rgba(255, 255, 255, 0.08)' : 'rgba(255, 255, 255, 0.04)',
+          borderColor: scrolled ? 'rgba(253, 251, 240, 0.12)' : 'rgba(253, 251, 240, 0.05)',
           transition: 'all 0.3s ease',
           boxShadow: scrolled ? '0 10px 30px rgba(0, 0, 0, 0.8)' : 'none',
         }}
@@ -229,7 +228,7 @@ export default function Navbar() {
               gap: 2,
             }}
           >
-            {/* Brand Logo with Headphone / DJ Icon */}
+            {/* Brand Logo with Official "Good People" Banner */}
             <Box
               component="a"
               href="#"
@@ -240,59 +239,24 @@ export default function Navbar() {
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 1.4,
                 textDecoration: 'none',
                 cursor: 'pointer',
                 flexShrink: 0,
+                transition: 'transform 0.25s ease, opacity 0.2s ease',
+                '&:hover': { transform: 'scale(1.03)', opacity: 0.95 },
               }}
             >
               <Box
+                component="img"
+                src="/banner.png"
+                alt="GibranPVD - Good People"
                 sx={{
-                  width: { xs: 34, sm: 38 },
-                  height: { xs: 34, sm: 38 },
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 0 16px rgba(245, 158, 11, 0.5)',
-                  flexShrink: 0,
-                  transition: 'transform 0.25s ease',
-                  '&:hover': { transform: 'scale(1.05)' },
+                  height: { xs: '32px', sm: '42px' },
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block',
                 }}
-              >
-                <HeadphonesIcon sx={{ color: '#09090B', fontSize: { xs: 18, sm: 20 } }} />
-              </Box>
-              <Box sx={{ flexShrink: 0 }}>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: '"Syne", sans-serif',
-                    fontWeight: 900,
-                    letterSpacing: '-0.02em',
-                    fontSize: { xs: '1.15rem', sm: '1.35rem' },
-                    color: '#FFFFFF',
-                    lineHeight: 1,
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  GIBRAN<span style={{ color: '#F59E0B' }}>PVD</span>
-                </Typography>
-                <Typography
-                  variant="caption"
-                  sx={{
-                    display: 'block',
-                    color: 'rgba(255, 255, 255, 0.5)',
-                    fontSize: '0.62rem',
-                    letterSpacing: '0.12em',
-                    textTransform: 'uppercase',
-                    fontWeight: 700,
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  Providence • DJ & Tour MC
-                </Typography>
-              </Box>
+              />
             </Box>
 
             {/* Desktop Navigation Links Track with Fluid Sliding Active Indicator */}
@@ -301,8 +265,8 @@ export default function Navbar() {
               sx={{
                 display: { xs: 'none', lg: 'flex' },
                 alignItems: 'center',
-                backgroundColor: 'rgba(255, 255, 255, 0.03)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                backgroundColor: 'rgba(253, 251, 240, 0.03)',
+                border: '1px solid rgba(253, 251, 240, 0.1)',
                 borderRadius: '50px',
                 p: '3px 4px',
                 position: 'relative',
@@ -319,8 +283,8 @@ export default function Navbar() {
                   width: `${indicatorStyle.width}px`,
                   height: `${indicatorStyle.height}px`,
                   borderRadius: '50px',
-                  background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-                  boxShadow: '0 2px 16px rgba(245, 158, 11, 0.45)',
+                  background: 'linear-gradient(135deg, #FFC700 0%, #E5B200 100%)',
+                  boxShadow: '0 2px 16px rgba(255, 199, 0, 0.45)',
                   opacity: indicatorStyle.opacity,
                   transition: 'left 0.28s cubic-bezier(0.16, 1, 0.3, 1), width 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease',
                   pointerEvents: 'none',
@@ -340,7 +304,7 @@ export default function Navbar() {
                       scrollToSection(link.href);
                     }}
                     sx={{
-                      color: isActive ? '#070709' : '#CBD5E1',
+                      color: isActive ? '#0B0B0B' : 'rgba(253, 251, 240, 0.75)',
                       backgroundColor: 'transparent',
                       fontSize: '0.82rem',
                       fontWeight: 800,
@@ -354,8 +318,8 @@ export default function Navbar() {
                       zIndex: 1,
                       transition: 'color 0.2s ease',
                       '&:hover': {
-                        backgroundColor: isActive ? 'transparent' : 'rgba(255, 255, 255, 0.08)',
-                        color: isActive ? '#070709' : '#FFFFFF',
+                        backgroundColor: isActive ? 'transparent' : 'rgba(253, 251, 240, 0.08)',
+                        color: isActive ? '#0B0B0B' : '#FDFBF0',
                       },
                     }}
                   >
@@ -384,9 +348,9 @@ export default function Navbar() {
                   justifyContent: 'center',
                   p: 0,
                   flexShrink: 0,
-                  color: '#94A3B8',
-                  backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  color: 'rgba(253, 251, 240, 0.7)',
+                  backgroundColor: 'rgba(253, 251, 240, 0.04)',
+                  border: '1px solid rgba(253, 251, 240, 0.1)',
                   '&:hover': {
                     color: '#3B82F6',
                     borderColor: '#3B82F6',
@@ -431,13 +395,13 @@ export default function Navbar() {
                   justifyContent: 'center',
                   p: 0,
                   flexShrink: 0,
-                  color: '#FFFFFF',
-                  backgroundColor: 'rgba(255, 255, 255, 0.06)',
-                  border: '1px solid rgba(245, 158, 11, 0.3)',
-                  boxShadow: '0 0 12px rgba(245, 158, 11, 0.15)',
+                  color: '#FDFBF0',
+                  backgroundColor: 'rgba(253, 251, 240, 0.06)',
+                  border: '1px solid rgba(255, 199, 0, 0.3)',
+                  boxShadow: '0 0 12px rgba(255, 199, 0, 0.15)',
                   '&:hover': {
-                    backgroundColor: 'rgba(245, 158, 11, 0.15)',
-                    borderColor: '#F59E0B',
+                    backgroundColor: 'rgba(255, 199, 0, 0.15)',
+                    borderColor: '#FFC700',
                   },
                 }}
               >
@@ -468,8 +432,8 @@ export default function Navbar() {
               height: '100vh',
               maxWidth: '100vw',
               maxHeight: '100vh',
-              backgroundColor: '#070709',
-              backgroundImage: 'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(245, 158, 11, 0.14), rgba(7, 7, 9, 0) 70%), radial-gradient(ellipse 60% 40% at 90% 90%, rgba(168, 85, 247, 0.08), rgba(7, 7, 9, 0) 70%)',
+              backgroundColor: '#0B0B0B',
+              backgroundImage: 'radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 199, 0, 0.14), rgba(11, 11, 11, 0) 70%)',
               boxSizing: 'border-box',
               p: 0,
               overflowY: 'auto',
@@ -504,36 +468,31 @@ export default function Navbar() {
               justifyContent: 'space-between',
               width: '100%',
               pb: 2.5,
-              borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+              borderBottom: '1px solid rgba(253, 251, 240, 0.08)',
               gap: { xs: 3, sm: 4 },
             }}
           >
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2, flexShrink: 0 }}>
+            <Box
+              component="a"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}
+            >
               <Box
+                component="img"
+                src="/banner.png"
+                alt="GibranPVD - Good People"
                 sx={{
-                  width: 32,
-                  height: 32,
-                  minWidth: 32,
-                  minHeight: 32,
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 0 14px rgba(245, 158, 11, 0.5)',
-                  flexShrink: 0,
+                  height: { xs: '30px', sm: '38px' },
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block',
                 }}
-              >
-                <HeadphonesIcon sx={{ color: '#09090B', fontSize: 18 }} />
-              </Box>
-              <Box sx={{ flexShrink: 0 }}>
-                <Typography variant="h6" sx={{ fontFamily: '"Syne", sans-serif', fontWeight: 900, color: '#FFF', lineHeight: 1, fontSize: '1.15rem', whiteSpace: 'nowrap' }}>
-                  GIBRAN<span style={{ color: '#F59E0B' }}>PVD</span>
-                </Typography>
-                <Typography variant="caption" sx={{ color: '#94A3B8', fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', whiteSpace: 'nowrap' }}>
-                  PROVIDENCE • TOUR MC
-                </Typography>
-              </Box>
+              />
             </Box>
 
             <IconButton
@@ -552,13 +511,13 @@ export default function Navbar() {
                 justifyContent: 'center',
                 p: 0,
                 flexShrink: 0,
-                color: '#CBD5E1',
-                backgroundColor: 'rgba(255, 255, 255, 0.06)',
-                border: '1px solid rgba(255, 255, 255, 0.12)',
+                color: '#EDE7CB',
+                backgroundColor: 'rgba(253, 251, 240, 0.06)',
+                border: '1px solid rgba(253, 251, 240, 0.12)',
                 '&:hover': {
-                  backgroundColor: 'rgba(245, 158, 11, 0.18)',
-                  borderColor: '#F59E0B',
-                  color: '#FFF',
+                  backgroundColor: 'rgba(255, 199, 0, 0.18)',
+                  borderColor: '#FFC700',
+                  color: '#FDFBF0',
                 },
               }}
             >
@@ -582,14 +541,14 @@ export default function Navbar() {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        backgroundColor: isActive ? 'rgba(245, 158, 11, 0.16)' : 'rgba(255, 255, 255, 0.02)',
+                        backgroundColor: isActive ? 'rgba(255, 199, 0, 0.16)' : 'rgba(253, 251, 240, 0.02)',
                         border: '1.5px solid',
-                        borderColor: isActive ? '#F59E0B' : 'rgba(255, 255, 255, 0.06)',
-                        boxShadow: isActive ? '0 0 20px rgba(245, 158, 11, 0.25), inset 0 0 10px rgba(245, 158, 11, 0.08)' : 'none',
+                        borderColor: isActive ? '#FFC700' : 'rgba(253, 251, 240, 0.08)',
+                        boxShadow: isActive ? '0 0 20px rgba(255, 199, 0, 0.25), inset 0 0 10px rgba(255, 199, 0, 0.08)' : 'none',
                         transition: 'all 0.25s ease',
                         '&:hover': {
-                          backgroundColor: isActive ? 'rgba(245, 158, 11, 0.22)' : 'rgba(245, 158, 11, 0.08)',
-                          borderColor: '#F59E0B',
+                          backgroundColor: isActive ? 'rgba(255, 199, 0, 0.22)' : 'rgba(255, 199, 0, 0.08)',
+                          borderColor: '#FFC700',
                           transform: 'translateX(3px)',
                         },
                       }}
@@ -600,13 +559,13 @@ export default function Navbar() {
                             fontSize: '0.74rem',
                             fontWeight: 900,
                             fontFamily: '"Syne", sans-serif',
-                            color: isActive ? '#F59E0B' : '#64748B',
+                            color: isActive ? '#FFC700' : 'rgba(253, 251, 240, 0.5)',
                             width: 22,
                           }}
                         >
                           {link.num}
                         </Typography>
-                        <Box sx={{ color: isActive ? '#F59E0B' : '#94A3B8', display: 'flex', alignItems: 'center' }}>
+                        <Box sx={{ color: isActive ? '#FFC700' : 'rgba(253, 251, 240, 0.7)', display: 'flex', alignItems: 'center' }}>
                           {link.icon}
                         </Box>
                         <Typography
@@ -615,7 +574,7 @@ export default function Navbar() {
                             fontWeight: isActive ? 900 : 700,
                             fontSize: '0.98rem',
                             letterSpacing: '0.01em',
-                            color: isActive ? '#FCD34D' : '#FFFFFF',
+                            color: isActive ? '#FFC700' : '#FDFBF0',
                           }}
                         >
                           {link.label}
@@ -628,12 +587,12 @@ export default function Navbar() {
                               width: 7,
                               height: 7,
                               borderRadius: '50%',
-                              backgroundColor: '#F59E0B',
-                              boxShadow: '0 0 10px #F59E0B',
+                              backgroundColor: '#FFC700',
+                              boxShadow: '0 0 10px #FFC700',
                             }}
                           />
                         )}
-                        <ChevronRightIcon sx={{ fontSize: 18, color: isActive ? '#F59E0B' : '#475569' }} />
+                        <ChevronRightIcon sx={{ fontSize: 18, color: isActive ? '#FFC700' : 'rgba(253, 251, 240, 0.4)' }} />
                       </Box>
                     </ListItemButton>
                   </ListItem>
@@ -643,7 +602,7 @@ export default function Navbar() {
           </Box>
 
           {/* Bottom Section: Pinned Cleanly to the Bottom */}
-          <Box sx={{ mt: 'auto', pt: 2, borderTop: '1px solid rgba(255, 255, 255, 0.08)', width: '100%' }}>
+          <Box sx={{ mt: 'auto', pt: 2, borderTop: '1px solid rgba(253, 251, 240, 0.08)', width: '100%' }}>
             <Button
               variant="contained"
               fullWidth
@@ -656,11 +615,11 @@ export default function Navbar() {
                 fontWeight: 900,
                 fontSize: '0.92rem',
                 letterSpacing: '0.03em',
-                background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-                color: '#070709',
-                boxShadow: '0 4px 20px rgba(245, 158, 11, 0.35)',
+                background: 'linear-gradient(135deg, #FFC700 0%, #E5B200 100%)',
+                color: '#0B0B0B',
+                boxShadow: '0 4px 20px rgba(255, 199, 0, 0.35)',
                 '&:hover': {
-                  background: 'linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%)',
+                  background: 'linear-gradient(135deg, #FFD633 0%, #FFC700 100%)',
                 },
               }}
             >
@@ -706,25 +665,25 @@ export default function Navbar() {
                 gap: 0.8,
                 py: 0.8,
                 borderRadius: 2,
-                backgroundColor: 'rgba(255, 255, 255, 0.03)',
-                border: '1px solid rgba(255, 255, 255, 0.06)',
+                backgroundColor: 'rgba(253, 251, 240, 0.03)',
+                border: '1px solid rgba(253, 251, 240, 0.08)',
                 textDecoration: 'none',
                 mb: 0.8,
                 width: '100%',
                 boxSizing: 'border-box',
                 '&:hover': {
-                  borderColor: '#F59E0B',
-                  backgroundColor: 'rgba(245, 158, 11, 0.06)',
+                  borderColor: '#FFC700',
+                  backgroundColor: 'rgba(255, 199, 0, 0.06)',
                 },
               }}
             >
-              <EmailIcon sx={{ color: '#F59E0B', fontSize: 15 }} />
-              <Typography variant="caption" sx={{ color: '#CBD5E1', fontWeight: 700, fontSize: '0.74rem' }}>
+              <EmailIcon sx={{ color: '#FFC700', fontSize: 15 }} />
+              <Typography variant="caption" sx={{ color: '#EDE7CB', fontWeight: 700, fontSize: '0.74rem' }}>
                 Direct: {DJ_PROFILE.bookingEmail}
               </Typography>
             </Box>
 
-            <Typography variant="caption" display="block" align="center" sx={{ color: '#475569', fontSize: '0.64rem' }}>
+            <Typography variant="caption" display="block" align="center" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontSize: '0.64rem' }}>
               GIBRANPVD • Providence, Rhode Island
             </Typography>
           </Box>

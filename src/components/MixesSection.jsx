@@ -28,7 +28,7 @@ const CATEGORIES = [
 ];
 
 const SET_ACCENTS = {
-  'hot-club-sunset': { glow: 'rgba(245, 158, 11, 0.2)', border: 'rgba(245, 158, 11, 0.4)', tagColor: '#F59E0B' },
+  'hot-club-sunset': { glow: 'rgba(255, 199, 0, 0.2)', border: 'rgba(255, 199, 0, 0.4)', tagColor: '#FFC700' },
   'cafecito-vol4': { glow: 'rgba(239, 68, 68, 0.2)', border: 'rgba(239, 68, 68, 0.4)', tagColor: '#F87171' },
   'pvd-midnight-vault': { glow: 'rgba(236, 72, 153, 0.2)', border: 'rgba(236, 72, 153, 0.4)', tagColor: '#F472B6' },
   'tour-stage-hype': { glow: 'rgba(6, 182, 212, 0.2)', border: 'rgba(6, 182, 212, 0.4)', tagColor: '#38BDF8' },
@@ -60,7 +60,7 @@ export default function MixesSection() {
       id="mixes"
       sx={{
         py: { xs: 8, sm: 11, md: 14 },
-        backgroundColor: '#070709',
+        backgroundColor: '#0B0B0B',
         position: 'relative',
         width: '100%',
         maxWidth: '100vw',
@@ -76,7 +76,7 @@ export default function MixesSection() {
           width: { xs: 180, md: 450 },
           height: { xs: 180, md: 450 },
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255, 199, 0, 0.08) 0%, transparent 70%)',
           filter: 'blur(60px)',
           pointerEvents: 'none',
         }}
@@ -89,7 +89,7 @@ export default function MixesSection() {
           width: { xs: 180, md: 450 },
           height: { xs: 180, md: 450 },
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(6, 182, 212, 0.06) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(253, 251, 240, 0.04) 0%, transparent 70%)',
           filter: 'blur(60px)',
           pointerEvents: 'none',
         }}
@@ -120,16 +120,16 @@ export default function MixesSection() {
               px: 1.8,
               mb: 1.8,
               borderRadius: '50px',
-              backgroundColor: 'rgba(245, 158, 11, 0.08)',
-              border: '1px solid rgba(245, 158, 11, 0.35)',
+              backgroundColor: 'rgba(255, 199, 0, 0.08)',
+              border: '1px solid rgba(255, 199, 0, 0.35)',
               boxSizing: 'border-box',
               maxWidth: '100%',
             }}
           >
-            <EqualizerIcon sx={{ color: '#F59E0B', fontSize: 16, display: 'block' }} />
+            <EqualizerIcon sx={{ color: '#FFC700', fontSize: 16, display: 'block' }} />
             <Typography
               sx={{
-                color: '#F59E0B',
+                color: '#FFC700',
                 fontWeight: 800,
                 fontSize: { xs: '0.66rem', sm: '0.74rem' },
                 letterSpacing: '0.06em',
@@ -155,15 +155,15 @@ export default function MixesSection() {
               mx: 'auto',
               display: 'block',
               whiteSpace: { xs: 'normal', md: 'nowrap' },
-              color: '#FFFFFF',
+              color: '#FDFBF0',
             }}
           >
-            SIGNATURE <span style={{ color: '#F59E0B', textShadow: '0 0 30px rgba(245, 158, 11, 0.35)' }}>LIVE SETS</span>
+            SIGNATURE <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>LIVE SETS</span>
           </Typography>
           <Typography
             variant="body1"
             sx={{
-              color: '#94A3B8',
+              color: 'rgba(253, 251, 240, 0.75)',
               fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
               lineHeight: 1.6,
               maxWidth: 680,
@@ -198,8 +198,8 @@ export default function MixesSection() {
               gap: 1,
               p: 0.8,
               borderRadius: '50px',
-              backgroundColor: 'rgba(255, 255, 255, 0.03)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              backgroundColor: 'rgba(253, 251, 240, 0.03)',
+              border: '1px solid rgba(253, 251, 240, 0.1)',
               flexShrink: 0,
               minWidth: 'max-content',
             }}
@@ -219,13 +219,13 @@ export default function MixesSection() {
                     borderRadius: '50px',
                     whiteSpace: 'nowrap',
                     flexShrink: 0,
-                    backgroundColor: isSelected ? '#F59E0B' : 'transparent',
-                    color: isSelected ? '#070709' : '#CBD5E1',
-                    boxShadow: isSelected ? '0 4px 16px rgba(245, 158, 11, 0.4)' : 'none',
+                    backgroundColor: isSelected ? '#FFC700' : 'transparent',
+                    color: isSelected ? '#0B0B0B' : 'rgba(253, 251, 240, 0.75)',
+                    boxShadow: isSelected ? '0 4px 16px rgba(255, 199, 0, 0.4)' : 'none',
                     transition: 'all 0.25s ease',
                     '&:hover': {
-                      backgroundColor: isSelected ? '#FCD34D' : 'rgba(255, 255, 255, 0.08)',
-                      color: isSelected ? '#070709' : '#FFF',
+                      backgroundColor: isSelected ? '#FFD633' : 'rgba(253, 251, 240, 0.08)',
+                      color: isSelected ? '#0B0B0B' : '#FDFBF0',
                     },
                   }}
                 >
@@ -246,7 +246,7 @@ export default function MixesSection() {
           }}
         >
           {filteredSets.map((set, idx) => {
-            const accent = SET_ACCENTS[set.id] || { glow: 'rgba(245, 158, 11, 0.2)', border: 'rgba(245, 158, 11, 0.4)', tagColor: '#F59E0B' };
+            const accent = SET_ACCENTS[set.id] || { glow: 'rgba(255, 199, 0, 0.2)', border: 'rgba(255, 199, 0, 0.4)', tagColor: '#FFC700' };
             const setNumber = `0${idx + 1}`;
 
             return (
@@ -256,9 +256,9 @@ export default function MixesSection() {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  backgroundColor: '#0E0E14',
+                  backgroundColor: '#141414',
                   backgroundImage: `radial-gradient(ellipse 60% 50% at 90% 10%, ${accent.glow}, transparent 70%)`,
-                  border: '1px solid rgba(255, 255, 255, 0.09)',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   p: { xs: 2.5, sm: 3.5 },
                   borderRadius: 4,
                   transition: 'all 0.3s ease',
@@ -283,7 +283,7 @@ export default function MixesSection() {
                     fontSize: '2.8rem',
                     fontWeight: 900,
                     lineHeight: 1,
-                    color: 'rgba(255, 255, 255, 0.04)',
+                    color: 'rgba(253, 251, 240, 0.04)',
                     pointerEvents: 'none',
                     userSelect: 'none',
                   }}
@@ -311,7 +311,7 @@ export default function MixesSection() {
                         py: 0.5,
                         px: 1.2,
                         borderRadius: '50px',
-                        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                        backgroundColor: 'rgba(253, 251, 240, 0.05)',
                         border: `1px solid ${accent.border}`,
                         color: accent.tagColor,
                         fontWeight: 800,
@@ -324,8 +324,8 @@ export default function MixesSection() {
                     </Box>
 
                     <Box sx={{ display: 'flex', gap: 1.2, alignItems: 'center', flexShrink: 0, width: { xs: '100%', sm: 'auto' }, justifyContent: { xs: 'space-between', sm: 'flex-end' } }}>
-                      <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 0.5, color: '#94A3B8', whiteSpace: 'nowrap' }}>
-                        <AccessTimeIcon sx={{ fontSize: 14, color: '#94A3B8', display: 'block', flexShrink: 0 }} />
+                      <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 0.5, color: 'rgba(253, 251, 240, 0.7)', whiteSpace: 'nowrap' }}>
+                        <AccessTimeIcon sx={{ fontSize: 14, color: 'rgba(253, 251, 240, 0.7)', display: 'block', flexShrink: 0 }} />
                         <Typography variant="caption" sx={{ fontWeight: 600, fontSize: '0.72rem', whiteSpace: 'nowrap', lineHeight: 1 }}>
                           {set.duration}
                         </Typography>
@@ -370,7 +370,7 @@ export default function MixesSection() {
                     sx={{
                       fontWeight: 900,
                       fontSize: { xs: '1.2rem', sm: '1.45rem' },
-                      color: '#FFFFFF',
+                      color: '#FDFBF0',
                       lineHeight: 1.25,
                       mb: 0.8,
                     }}
@@ -396,13 +396,13 @@ export default function MixesSection() {
                       transition: 'all 0.2s ease',
                       '&:hover': {
                         '& .venue-name': {
-                          color: '#F59E0B',
+                          color: '#FFC700',
                           textDecoration: 'underline',
                         },
                       },
                     }}
                   >
-                    <PlaceIcon sx={{ fontSize: 15, color: '#F59E0B', flexShrink: 0 }} />
+                    <PlaceIcon sx={{ fontSize: 15, color: '#FFC700', flexShrink: 0 }} />
                     <Typography
                       className="venue-name"
                       variant="caption"
@@ -422,7 +422,7 @@ export default function MixesSection() {
                   <Typography
                     variant="body2"
                     sx={{
-                      color: '#94A3B8',
+                      color: 'rgba(253, 251, 240, 0.75)',
                       lineHeight: 1.6,
                       fontSize: '0.86rem',
                       mb: 2.5,
@@ -433,7 +433,7 @@ export default function MixesSection() {
 
                   {/* Vibe & Genre Tags (Smooth Horizontal Swipe Track) */}
                   <Box sx={{ mb: 2.5 }}>
-                    <Typography variant="caption" sx={{ display: 'block', color: '#64748B', fontWeight: 800, mb: 0.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.64rem' }}>
+                    <Typography variant="caption" sx={{ display: 'block', color: 'rgba(253, 251, 240, 0.5)', fontWeight: 800, mb: 0.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.64rem' }}>
                       CURATION HIGHLIGHTS & GENRES:
                     </Typography>
                     <Box
@@ -459,15 +459,15 @@ export default function MixesSection() {
                             py: 0.5,
                             px: 1.2,
                             borderRadius: '50px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            backgroundColor: 'rgba(253, 251, 240, 0.04)',
+                            border: '1px solid rgba(253, 251, 240, 0.1)',
                           }}
                         >
                           <WhatshotIcon sx={{ color: accent.tagColor, fontSize: 13, display: 'block', flexShrink: 0 }} />
                           <Typography
                             component="span"
                             sx={{
-                              color: '#F8FAFC',
+                              color: '#FDFBF0',
                               fontSize: '0.7rem',
                               fontWeight: 700,
                               lineHeight: 1,
@@ -489,15 +489,15 @@ export default function MixesSection() {
                             py: 0.5,
                             px: 1.2,
                             borderRadius: '50px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                            border: '1px solid rgba(255, 255, 255, 0.05)',
+                            backgroundColor: 'rgba(253, 251, 240, 0.02)',
+                            border: '1px solid rgba(253, 251, 240, 0.06)',
                           }}
                         >
-                          <MusicNoteIcon sx={{ color: '#94A3B8', fontSize: 13, display: 'block', flexShrink: 0 }} />
+                          <MusicNoteIcon sx={{ color: 'rgba(253, 251, 240, 0.6)', fontSize: 13, display: 'block', flexShrink: 0 }} />
                           <Typography
                             component="span"
                             sx={{
-                              color: '#94A3B8',
+                              color: 'rgba(253, 251, 240, 0.7)',
                               fontSize: '0.7rem',
                               fontWeight: 600,
                               lineHeight: 1,
@@ -520,7 +520,7 @@ export default function MixesSection() {
                     gap: 1.2,
                     alignItems: 'center',
                     pt: 2,
-                    borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                    borderTop: '1px solid rgba(253, 251, 240, 0.08)',
                     mt: 'auto',
                     width: '100%',
                     position: 'relative',
@@ -583,9 +583,9 @@ export default function MixesSection() {
           sx={{
             mt: { xs: 4, sm: 7 },
             p: { xs: 3, sm: 4.5 },
-            backgroundColor: '#0E0E14',
-            backgroundImage: 'radial-gradient(ellipse 60% 50% at 0% 50%, rgba(245, 158, 11, 0.12), transparent 70%), radial-gradient(ellipse 60% 50% at 100% 50%, rgba(59, 130, 246, 0.1), transparent 70%)',
-            border: '1px solid rgba(245, 158, 11, 0.35)',
+            backgroundColor: '#141414',
+            backgroundImage: 'radial-gradient(ellipse 60% 50% at 0% 50%, rgba(255, 199, 0, 0.12), transparent 70%), radial-gradient(ellipse 60% 50% at 100% 50%, rgba(59, 130, 246, 0.1), transparent 70%)',
+            border: '1px solid rgba(255, 199, 0, 0.35)',
             borderRadius: 4,
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
@@ -604,10 +604,10 @@ export default function MixesSection() {
                 COMMUNITY & TOUR UPDATES
               </Typography>
             </Box>
-            <Typography variant="h5" sx={{ fontWeight: 900, color: '#FFF', mb: 1, fontSize: { xs: '1.25rem', sm: '1.55rem' } }}>
+            <Typography variant="h5" sx={{ fontWeight: 900, color: '#FDFBF0', mb: 1, fontSize: { xs: '1.25rem', sm: '1.55rem' } }}>
               Follow Gibran’s Live Sets & Schedule
             </Typography>
-            <Typography variant="body2" sx={{ color: '#94A3B8', fontSize: '0.88rem', lineHeight: 1.65 }}>
+            <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.75)', fontSize: '0.88rem', lineHeight: 1.65 }}>
               Live party updates, venue announcements, and tour dates are posted on his official Facebook community page.
             </Typography>
           </Box>
@@ -646,18 +646,18 @@ export default function MixesSection() {
               startIcon={<CalendarMonthIcon sx={{ fontSize: 18, mr: 0.5 }} />}
               onClick={scrollToBooking}
               sx={{
-                borderColor: 'rgba(245, 158, 11, 0.4)',
-                color: '#FCD34D',
+                borderColor: 'rgba(255, 199, 0, 0.4)',
+                color: '#FFC700',
                 fontWeight: 800,
                 px: { xs: 3, sm: 3.2 },
                 py: { xs: 1.4, sm: 1.5 },
                 fontSize: { xs: '0.86rem', sm: '0.92rem' },
                 maxWidth: '100%',
                 whiteSpace: 'nowrap',
-                backgroundColor: 'rgba(245, 158, 11, 0.05)',
+                backgroundColor: 'rgba(255, 199, 0, 0.05)',
                 '&:hover': {
-                  borderColor: '#F59E0B',
-                  backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                  borderColor: '#FFC700',
+                  backgroundColor: 'rgba(255, 199, 0, 0.15)',
                 },
               }}
             >

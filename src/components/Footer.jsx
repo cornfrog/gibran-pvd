@@ -9,7 +9,6 @@ import {
 import {
   Facebook as FacebookIcon,
   KeyboardArrowUp as KeyboardArrowUpIcon,
-  Headphones as HeadphonesIcon,
 } from '@mui/icons-material';
 import { DJ_PROFILE } from '../data/djData';
 
@@ -34,10 +33,10 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#050507',
-        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-        pt: { xs: 3.5, sm: 4.5 },
-        pb: 3,
+        backgroundColor: '#080808',
+        borderTop: '1px solid rgba(253, 251, 240, 0.12)',
+        pt: { xs: 4, sm: 5.5 },
+        pb: 3.5,
         width: '100%',
         overflowX: 'hidden',
       }}
@@ -58,53 +57,34 @@ export default function Footer() {
               sx={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: 1.2,
-                mb: 1.5,
+                mb: 2,
               }}
             >
               <Box
+                component="img"
+                src="/banner.png"
+                alt="GibranPVD - Good People"
                 sx={{
-                  width: 30,
-                  height: 30,
-                  minWidth: 30,
-                  minHeight: 30,
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
+                  height: { xs: '40px', sm: '52px' },
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block',
                 }}
-              >
-                <HeadphonesIcon sx={{ color: '#09090B', fontSize: 16 }} />
-              </Box>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontFamily: '"Syne", sans-serif',
-                  fontWeight: 900,
-                  letterSpacing: '0.06em',
-                  color: '#FFFFFF',
-                  fontSize: '1.15rem',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                GIBRAN<span style={{ color: '#F59E0B' }}>PVD</span>
-              </Typography>
+              />
             </Box>
 
-            <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.6, mb: 1.5, fontSize: '0.85rem' }}>
-              <span style={{ color: '#FCD34D', fontWeight: 700 }}>“Entertainment for everyone. Good people deserve good music.”</span> Full-time open-format DJ, concert tour MC, and creative director handling 17+ to 24+ monthly events across New England, New York, and national concert stages.
+            <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.75)', lineHeight: 1.6, mb: 1.5, fontSize: '0.85rem' }}>
+              <span style={{ color: '#FFC700', fontWeight: 700 }}>“Entertainment for everyone. Good people deserve good music.”</span> Full-time open-format DJ, concert tour MC, and creative director handling 17+ to 24+ monthly events across New England, New York, and national concert stages.
             </Typography>
 
-            <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 700, letterSpacing: '0.06em', fontSize: '0.68rem' }}>
+            <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 700, letterSpacing: '0.06em', fontSize: '0.68rem' }}>
               PROVIDENCE, RI • EST. 2004
             </Typography>
           </Box>
 
           {/* Quick Navigation */}
           <Box>
-            <Typography variant="subtitle2" sx={{ color: '#FFFFFF', fontWeight: 800, mb: 1.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.82rem' }}>
+            <Typography variant="subtitle2" sx={{ color: '#FDFBF0', fontWeight: 800, mb: 1.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.82rem' }}>
               Quick Navigation
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, alignItems: { xs: 'center', md: 'flex-start' } }}>
@@ -124,11 +104,11 @@ export default function Footer() {
                     border: 'none',
                     padding: '4px 0',
                     cursor: 'pointer',
-                    color: '#94A3B8',
+                    color: 'rgba(253, 251, 240, 0.7)',
                     fontSize: '0.85rem',
                     textAlign: { xs: 'center', md: 'left' },
                     transition: 'color 0.2s',
-                    '&:hover': { color: '#F59E0B' },
+                    '&:hover': { color: '#FFC700' },
                   }}
                 >
                   {item.label}
@@ -139,7 +119,7 @@ export default function Footer() {
 
           {/* Connect & Socials */}
           <Box>
-            <Typography variant="subtitle2" sx={{ color: '#FFFFFF', fontWeight: 800, mb: 1.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.82rem' }}>
+            <Typography variant="subtitle2" sx={{ color: '#FDFBF0', fontWeight: 800, mb: 1.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.82rem' }}>
               Connect & Follow
             </Typography>
             <Box sx={{ display: 'flex', gap: 1.5, justifyContent: { xs: 'center', md: 'flex-start' }, mb: 2 }}>
@@ -160,9 +140,9 @@ export default function Footer() {
                   justifyContent: 'center',
                   p: 0,
                   flexShrink: 0,
-                  backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                  color: '#CBD5E1',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  backgroundColor: 'rgba(253, 251, 240, 0.04)',
+                  color: '#EDE7CB',
+                  border: '1px solid rgba(253, 251, 240, 0.1)',
                   '&:hover': { color: '#3B82F6', borderColor: '#3B82F6', backgroundColor: 'rgba(59, 130, 246, 0.12)' },
                 }}
               >
@@ -170,13 +150,13 @@ export default function Footer() {
               </IconButton>
             </Box>
 
-            <Typography variant="body2" sx={{ color: '#64748B', fontSize: '0.82rem' }}>
-              Direct Booking: <span style={{ color: '#F59E0B', fontWeight: 700 }}>gibran@me.com</span>
+            <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.65)', fontSize: '0.82rem' }}>
+              Direct Booking: <span style={{ color: '#FFC700', fontWeight: 700 }}>gibran@me.com</span>
             </Typography>
           </Box>
         </Box>
 
-        <Divider sx={{ borderColor: 'rgba(255, 255, 255, 0.06)', mb: 3 }} />
+        <Divider sx={{ borderColor: 'rgba(253, 251, 240, 0.08)', mb: 3 }} />
 
         {/* Bottom Bar */}
         <Box
@@ -188,7 +168,7 @@ export default function Footer() {
             gap: 1.5,
           }}
         >
-          <Typography variant="caption" sx={{ color: '#64748B', fontSize: '0.72rem', textAlign: { xs: 'center', sm: 'left' } }}>
+          <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontSize: '0.72rem', textAlign: { xs: 'center', sm: 'left' } }}>
             © {new Date().getFullYear()} GIBRANPVD. All rights reserved.
           </Typography>
 
@@ -198,10 +178,10 @@ export default function Footer() {
             endIcon={<KeyboardArrowUpIcon />}
             onClick={scrollToTop}
             sx={{
-              color: '#94A3B8',
+              color: 'rgba(253, 251, 240, 0.7)',
               fontSize: '0.78rem',
               fontWeight: 700,
-              '&:hover': { color: '#F59E0B' },
+              '&:hover': { color: '#FFC700' },
             }}
           >
             Back to Top

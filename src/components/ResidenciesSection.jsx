@@ -19,7 +19,7 @@ import { RESIDENCIES, TOUR_ARTISTS } from '../data/djData';
 
 export default function ResidenciesSection() {
   return (
-    <Box sx={{ backgroundColor: '#07070A', width: '100%', maxWidth: '100vw', overflow: 'hidden' }}>
+    <Box sx={{ backgroundColor: '#0B0B0B', width: '100%', maxWidth: '100vw', overflow: 'hidden' }}>
       
       {/* SECTION 1: PROVIDENCE RESIDENCIES */}
       <Box
@@ -27,7 +27,7 @@ export default function ResidenciesSection() {
         sx={{
           py: { xs: 8, sm: 11, md: 14 },
           position: 'relative',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+          borderBottom: '1px solid rgba(253, 251, 240, 0.08)',
           width: '100%',
         }}
       >
@@ -40,7 +40,7 @@ export default function ResidenciesSection() {
             width: { xs: 180, md: 500 },
             height: { xs: 180, md: 500 },
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255, 199, 0, 0.08) 0%, transparent 70%)',
             filter: 'blur(70px)',
             pointerEvents: 'none',
           }}
@@ -71,16 +71,16 @@ export default function ResidenciesSection() {
                 px: 1.8,
                 mb: 1.8,
                 borderRadius: '50px',
-                backgroundColor: 'rgba(245, 158, 11, 0.08)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
+                backgroundColor: 'rgba(255, 199, 0, 0.08)',
+                border: '1px solid rgba(255, 199, 0, 0.35)',
                 boxSizing: 'border-box',
                 maxWidth: '100%',
               }}
             >
-              <LocationCityIcon sx={{ color: '#F59E0B', fontSize: 16, display: 'block' }} />
+              <LocationCityIcon sx={{ color: '#FFC700', fontSize: 16, display: 'block' }} />
               <Typography
                 sx={{
-                  color: '#F59E0B',
+                  color: '#FFC700',
                   fontWeight: 800,
                   fontSize: { xs: '0.66rem', sm: '0.74rem' },
                   letterSpacing: '0.06em',
@@ -106,15 +106,15 @@ export default function ResidenciesSection() {
                 mx: 'auto',
                 display: 'block',
                 whiteSpace: { xs: 'normal', md: 'nowrap' },
-                color: '#FFFFFF',
+                color: '#FDFBF0',
               }}
             >
-              PROVIDENCE <span style={{ color: '#F59E0B', textShadow: '0 0 30px rgba(245, 158, 11, 0.35)' }}>RESIDENCIES</span>
+              PROVIDENCE <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>RESIDENCIES</span>
             </Typography>
             <Typography
               variant="body1"
               sx={{
-                color: '#94A3B8',
+                color: 'rgba(253, 251, 240, 0.75)',
                 fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
                 lineHeight: 1.6,
                 maxWidth: 680,
@@ -146,12 +146,12 @@ export default function ResidenciesSection() {
                   sx={{
                     gridColumn: isFlagship ? { lg: '1 / -1' } : 'auto',
                     p: { xs: 2.8, sm: 4 },
-                    backgroundColor: isFlagship ? '#0F0F16' : '#0D0D12',
+                    backgroundColor: isFlagship ? '#181818' : '#141414',
                     backgroundImage: isFlagship
-                      ? 'radial-gradient(ellipse 70% 60% at 95% 10%, rgba(245, 158, 11, 0.18), transparent 70%), radial-gradient(ellipse 50% 50% at 5% 90%, rgba(6, 182, 212, 0.08), transparent 70%)'
-                      : 'radial-gradient(ellipse 60% 50% at 95% 10%, rgba(255, 255, 255, 0.03), transparent 70%)',
+                      ? 'radial-gradient(ellipse 70% 60% at 95% 10%, rgba(255, 199, 0, 0.18), transparent 70%), radial-gradient(ellipse 50% 50% at 5% 90%, rgba(253, 251, 240, 0.04), transparent 70%)'
+                      : 'radial-gradient(ellipse 60% 50% at 95% 10%, rgba(253, 251, 240, 0.03), transparent 70%)',
                     border: '1px solid',
-                    borderColor: isFlagship ? 'rgba(245, 158, 11, 0.45)' : 'rgba(255, 255, 255, 0.08)',
+                    borderColor: isFlagship ? 'rgba(255, 199, 0, 0.45)' : 'rgba(253, 251, 240, 0.12)',
                     borderRadius: 4,
                     display: 'flex',
                     flexDirection: 'column',
@@ -162,11 +162,11 @@ export default function ResidenciesSection() {
                     boxSizing: 'border-box',
                     transition: 'all 0.3s ease',
                     '&:hover': {
-                      borderColor: isFlagship ? '#F59E0B' : 'rgba(245, 158, 11, 0.4)',
+                      borderColor: isFlagship ? '#FFC700' : 'rgba(255, 199, 0, 0.4)',
                       transform: 'translateY(-3px)',
                       boxShadow: isFlagship
-                        ? '0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.2)'
-                        : '0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(245, 158, 11, 0.1)',
+                        ? '0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 199, 0, 0.2)'
+                        : '0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 199, 0, 0.1)',
                     },
                   }}
                 >
@@ -182,16 +182,16 @@ export default function ResidenciesSection() {
                           py: 0.6,
                           px: 1.4,
                           borderRadius: '50px',
-                          backgroundColor: isFlagship ? 'rgba(245, 158, 11, 0.15)' : 'rgba(255, 255, 255, 0.05)',
-                          border: '1px solid rgba(245, 158, 11, 0.35)',
+                          backgroundColor: isFlagship ? 'rgba(255, 199, 0, 0.15)' : 'rgba(253, 251, 240, 0.05)',
+                          border: '1px solid rgba(255, 199, 0, 0.35)',
                           boxSizing: 'border-box',
                         }}
                       >
-                        <WhatshotIcon sx={{ color: '#F59E0B', fontSize: 14, display: 'block', flexShrink: 0 }} />
+                        <WhatshotIcon sx={{ color: '#FFC700', fontSize: 14, display: 'block', flexShrink: 0 }} />
                         <Typography
                           component="span"
                           sx={{
-                            color: '#FCD34D',
+                            color: '#FFC700',
                             fontWeight: 800,
                             fontSize: '0.72rem',
                             letterSpacing: '0.03em',
@@ -212,7 +212,7 @@ export default function ResidenciesSection() {
                         sx={{
                           fontWeight: 900,
                           fontSize: isFlagship ? { xs: '1.35rem', sm: '1.85rem' } : { xs: '1.2rem', sm: '1.5rem' },
-                          color: '#FFFFFF',
+                          color: '#FDFBF0',
                           mb: 0.5,
                           lineHeight: 1.2,
                         }}
@@ -230,22 +230,22 @@ export default function ResidenciesSection() {
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: 0.6,
-                          color: '#94A3B8',
+                          color: 'rgba(253, 251, 240, 0.7)',
                           mb: 0.8,
                           textDecoration: 'none',
                           cursor: 'pointer',
                           width: 'fit-content',
                           transition: 'all 0.2s ease',
                           '&:hover': {
-                            color: '#F59E0B',
+                            color: '#FFC700',
                             '& .address-text': {
-                              color: '#F59E0B',
+                              color: '#FFC700',
                               textDecoration: 'underline',
                             },
                           },
                         }}
                       >
-                        <PlaceIcon sx={{ fontSize: 15, color: '#F59E0B', flexShrink: 0 }} />
+                        <PlaceIcon sx={{ fontSize: 15, color: '#FFC700', flexShrink: 0 }} />
                         <Typography
                           className="address-text"
                           variant="caption"
@@ -253,7 +253,7 @@ export default function ResidenciesSection() {
                             fontWeight: 700,
                             letterSpacing: '0.02em',
                             fontSize: { xs: '0.76rem', sm: '0.82rem' },
-                            color: '#CBD5E1',
+                            color: '#EDE7CB',
                             transition: 'color 0.2s ease',
                           }}
                         >
@@ -279,7 +279,7 @@ export default function ResidenciesSection() {
                     <Typography
                       variant="body2"
                       sx={{
-                        color: '#94A3B8',
+                        color: 'rgba(253, 251, 240, 0.75)',
                         lineHeight: 1.65,
                         fontSize: '0.88rem',
                         mb: 2.8,
@@ -291,8 +291,8 @@ export default function ResidenciesSection() {
                   </Box>
 
                   {/* Horizontal Scroll Track for Features */}
-                  <Box sx={{ pt: 2, borderTop: '1px solid rgba(255, 255, 255, 0.06)', position: 'relative', zIndex: 1 }}>
-                    <Typography variant="caption" sx={{ display: 'block', color: '#64748B', fontWeight: 800, mb: 0.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.64rem' }}>
+                  <Box sx={{ pt: 2, borderTop: '1px solid rgba(253, 251, 240, 0.08)', position: 'relative', zIndex: 1 }}>
+                    <Typography variant="caption" sx={{ display: 'block', color: 'rgba(253, 251, 240, 0.5)', fontWeight: 800, mb: 0.8, textTransform: 'uppercase', letterSpacing: '0.06em', fontSize: '0.64rem' }}>
                       VENUE KEY ATTRIBUTES:
                     </Typography>
                     <Box
@@ -318,15 +318,15 @@ export default function ResidenciesSection() {
                             py: 0.5,
                             px: 1.2,
                             borderRadius: '50px',
-                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
-                            border: '1px solid rgba(255, 255, 255, 0.08)',
+                            backgroundColor: 'rgba(253, 251, 240, 0.03)',
+                            border: '1px solid rgba(253, 251, 240, 0.1)',
                           }}
                         >
-                          <CheckCircleIcon sx={{ fontSize: 13, color: '#10B981', display: 'block', flexShrink: 0 }} />
+                          <CheckCircleIcon sx={{ fontSize: 13, color: '#FFC700', display: 'block', flexShrink: 0 }} />
                           <Typography
                             component="span"
                             sx={{
-                              color: '#E2E8F0',
+                              color: '#EDE7CB',
                               fontSize: '0.72rem',
                               fontWeight: 700,
                               lineHeight: 1,
@@ -356,7 +356,7 @@ export default function ResidenciesSection() {
           width: '100%',
         }}
       >
-        {/* Subtle Ambient Purple Glow */}
+        {/* Subtle Ambient Glow */}
         <Box
           sx={{
             position: 'absolute',
@@ -365,7 +365,7 @@ export default function ResidenciesSection() {
             width: { xs: 180, md: 500 },
             height: { xs: 180, md: 500 },
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(168, 85, 247, 0.09) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255, 199, 0, 0.06) 0%, transparent 70%)',
             filter: 'blur(70px)',
             pointerEvents: 'none',
           }}
@@ -396,16 +396,16 @@ export default function ResidenciesSection() {
                 px: 1.8,
                 mb: 1.8,
                 borderRadius: '50px',
-                backgroundColor: 'rgba(168, 85, 247, 0.08)',
-                border: '1px solid rgba(168, 85, 247, 0.35)',
+                backgroundColor: 'rgba(255, 199, 0, 0.08)',
+                border: '1px solid rgba(255, 199, 0, 0.35)',
                 boxSizing: 'border-box',
                 maxWidth: '100%',
               }}
             >
-              <StadiumIcon sx={{ color: '#A855F7', fontSize: 16, display: 'block' }} />
+              <StadiumIcon sx={{ color: '#FFC700', fontSize: 16, display: 'block' }} />
               <Typography
                 sx={{
-                  color: '#A855F7',
+                  color: '#FFC700',
                   fontWeight: 800,
                   fontSize: { xs: '0.66rem', sm: '0.74rem' },
                   letterSpacing: '0.06em',
@@ -431,15 +431,15 @@ export default function ResidenciesSection() {
                 mx: 'auto',
                 display: 'block',
                 whiteSpace: { xs: 'normal', md: 'nowrap' },
-                color: '#FFFFFF',
+                color: '#FDFBF0',
               }}
             >
-              TOUR MC <span style={{ color: '#A855F7', textShadow: '0 0 30px rgba(168, 85, 247, 0.35)' }}>STAGE CREDITS</span>
+              TOUR MC <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>STAGE CREDITS</span>
             </Typography>
             <Typography
               variant="body1"
               sx={{
-                color: '#94A3B8',
+                color: 'rgba(253, 251, 240, 0.75)',
                 fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
                 lineHeight: 1.6,
                 maxWidth: 680,
@@ -458,8 +458,8 @@ export default function ResidenciesSection() {
             sx={{
               p: { xs: 3, sm: 4.5 },
               mb: { xs: 3, sm: 4.5 },
-              background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.18) 0%, rgba(14, 14, 20, 0.98) 100%)',
-              border: '1px solid rgba(168, 85, 247, 0.4)',
+              background: 'linear-gradient(135deg, rgba(255, 199, 0, 0.12) 0%, rgba(20, 20, 20, 0.98) 100%)',
+              border: '1px solid rgba(255, 199, 0, 0.35)',
               borderRadius: 4,
               width: '100%',
               boxSizing: 'border-box',
@@ -470,30 +470,30 @@ export default function ResidenciesSection() {
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 2.5, alignItems: { md: 'center' }, justifyContent: 'space-between' }}>
               <Box sx={{ maxWidth: 720 }}>
                 <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mb: 1 }}>
-                  <MicIcon sx={{ color: '#C084FC', fontSize: 18 }} />
-                  <Typography variant="overline" sx={{ color: '#C084FC', fontWeight: 800, letterSpacing: '0.08em', fontSize: '0.72rem' }}>
+                  <MicIcon sx={{ color: '#FFC700', fontSize: 18 }} />
+                  <Typography variant="overline" sx={{ color: '#FFC700', fontWeight: 800, letterSpacing: '0.08em', fontSize: '0.72rem' }}>
                     LIVE ARENA & AMPHITHEATER HOST
                   </Typography>
                 </Box>
-                <Typography variant="h4" sx={{ fontWeight: 900, color: '#FFF', mb: 1, fontSize: { xs: '1.28rem', sm: '1.75rem' }, lineHeight: 1.25 }}>
+                <Typography variant="h4" sx={{ fontWeight: 900, color: '#FDFBF0', mb: 1, fontSize: { xs: '1.28rem', sm: '1.75rem' }, lineHeight: 1.25 }}>
                   National Tour Host & Direct Stage Support (2010 — Present)
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#CBD5E1', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.8)', fontSize: '0.88rem', lineHeight: 1.6 }}>
                   Direct stage support, concert DJing, and live crowd hosting across national amphitheater and arena tours with multi-platinum headliners: Kendrick Lamar, Logic & Rat Pack, Trippie Redd, Kanye West, Lupe Fiasco, Rae Sremmurd, Bad Rabbits, Chance the Rapper, and Steve Aoki.
                 </Typography>
               </Box>
               <Chip
-                icon={<PassIcon sx={{ color: '#FFF !important', fontSize: '15px !important' }} />}
+                icon={<PassIcon sx={{ color: '#0B0B0B !important', fontSize: '15px !important' }} />}
                 label="100% LIVE STAGE CONTROL"
                 sx={{
-                  backgroundColor: '#A855F7',
-                  color: '#FFF',
+                  background: 'linear-gradient(135deg, #FFC700 0%, #E5B200 100%)',
+                  color: '#0B0B0B',
                   fontWeight: 900,
                   fontSize: { xs: '0.74rem', sm: '0.82rem' },
                   py: 2.2,
                   px: 1.5,
                   alignSelf: { xs: 'flex-start', md: 'center' },
-                  boxShadow: '0 4px 18px rgba(168, 85, 247, 0.4)',
+                  boxShadow: '0 4px 18px rgba(255, 199, 0, 0.4)',
                   maxWidth: '100%',
                 }}
               />
@@ -514,9 +514,9 @@ export default function ResidenciesSection() {
                 key={artist.name}
                 sx={{
                   p: { xs: 2, sm: 2.8 },
-                  backgroundColor: '#0E0E14',
-                  backgroundImage: 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(168, 85, 247, 0.08), transparent 70%)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  backgroundColor: '#141414',
+                  backgroundImage: 'radial-gradient(ellipse 70% 60% at 50% 0%, rgba(255, 199, 0, 0.06), transparent 70%)',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   borderRadius: 3.5,
                   display: 'flex',
                   flexDirection: 'column',
@@ -527,9 +527,9 @@ export default function ResidenciesSection() {
                   overflow: 'hidden',
                   transition: 'all 0.25s ease',
                   '&:hover': {
-                    borderColor: 'rgba(168, 85, 247, 0.6)',
+                    borderColor: 'rgba(255, 199, 0, 0.6)',
                     transform: 'translateY(-3px)',
-                    boxShadow: '0 12px 30px rgba(168, 85, 247, 0.22)',
+                    boxShadow: '0 12px 30px rgba(255, 199, 0, 0.18)',
                   },
                 }}
               >
@@ -543,7 +543,7 @@ export default function ResidenciesSection() {
                     fontSize: '1.4rem',
                     fontWeight: 900,
                     lineHeight: 1,
-                    color: 'rgba(255, 255, 255, 0.04)',
+                    color: 'rgba(253, 251, 240, 0.04)',
                     pointerEvents: 'none',
                     userSelect: 'none',
                   }}
@@ -557,22 +557,22 @@ export default function ResidenciesSection() {
                       label={artist.badge}
                       size="small"
                       sx={{
-                        backgroundColor: 'rgba(168, 85, 247, 0.15)',
-                        color: '#D8B4FE',
+                        backgroundColor: 'rgba(255, 199, 0, 0.12)',
+                        color: '#FFC700',
                         fontWeight: 800,
                         fontSize: { xs: '0.62rem', sm: '0.7rem' },
                         height: 22,
-                        border: '1px solid rgba(168, 85, 247, 0.3)',
+                        border: '1px solid rgba(255, 199, 0, 0.25)',
                       }}
                     />
-                    <StarIcon sx={{ color: '#F59E0B', fontSize: 16 }} />
+                    <StarIcon sx={{ color: '#FFC700', fontSize: 16 }} />
                   </Box>
 
                   <Typography
                     variant="h6"
                     sx={{
                       fontWeight: 900,
-                      color: '#FFFFFF',
+                      color: '#FDFBF0',
                       fontSize: { xs: '1rem', sm: '1.2rem' },
                       mb: 0.4,
                       lineHeight: 1.2,
@@ -581,7 +581,7 @@ export default function ResidenciesSection() {
                     {artist.name}
                   </Typography>
 
-                  <Typography variant="body2" sx={{ color: '#C084FC', fontWeight: 800, fontSize: { xs: '0.74rem', sm: '0.82rem' }, mb: 1 }}>
+                  <Typography variant="body2" sx={{ color: '#EDE7CB', fontWeight: 800, fontSize: { xs: '0.74rem', sm: '0.82rem' }, mb: 1 }}>
                     {artist.role}
                   </Typography>
                 </Box>
@@ -589,9 +589,9 @@ export default function ResidenciesSection() {
                 <Typography
                   variant="caption"
                   sx={{
-                    color: '#64748B',
+                    color: 'rgba(253, 251, 240, 0.6)',
                     pt: 1,
-                    borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                    borderTop: '1px solid rgba(253, 251, 240, 0.08)',
                     fontSize: { xs: '0.66rem', sm: '0.74rem' },
                     fontWeight: 600,
                     display: 'block',

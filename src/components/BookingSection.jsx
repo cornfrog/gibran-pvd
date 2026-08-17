@@ -158,7 +158,7 @@ export default function BookingSection() {
       sx={{
         pt: { xs: 8, sm: 11, md: 14 },
         pb: { xs: 4, sm: 5, md: 6 },
-        backgroundColor: '#070709',
+        backgroundColor: '#0B0B0B',
         position: 'relative',
         width: '100%',
         maxWidth: '100vw',
@@ -193,16 +193,16 @@ export default function BookingSection() {
               px: 1.8,
               mb: 1.8,
               borderRadius: '50px',
-              backgroundColor: 'rgba(245, 158, 11, 0.08)',
-              border: '1px solid rgba(245, 158, 11, 0.35)',
+              backgroundColor: 'rgba(255, 199, 0, 0.08)',
+              border: '1px solid rgba(255, 199, 0, 0.35)',
               boxSizing: 'border-box',
               maxWidth: '100%',
             }}
           >
-            <EventAvailableIcon sx={{ color: '#F59E0B', fontSize: 16, display: 'block' }} />
+            <EventAvailableIcon sx={{ color: '#FFC700', fontSize: 16, display: 'block' }} />
             <Typography
               sx={{
-                color: '#F59E0B',
+                color: '#FFC700',
                 fontWeight: 800,
                 fontSize: { xs: '0.66rem', sm: '0.74rem' },
                 letterSpacing: '0.06em',
@@ -229,16 +229,16 @@ export default function BookingSection() {
               mx: 'auto',
               display: 'block',
               whiteSpace: { xs: 'normal', md: 'nowrap' },
-              color: '#FFFFFF',
+              color: '#FDFBF0',
             }}
           >
-            LOCK IN <span style={{ color: '#F59E0B' }}>GIBRANPVD</span>
+            LOCK IN <span style={{ color: '#FFC700' }}>GIBRANPVD</span>
           </Typography>
 
           <Typography
             variant="body1"
             sx={{
-              color: '#94A3B8',
+              color: 'rgba(253, 251, 240, 0.75)',
               fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
               lineHeight: 1.6,
               maxWidth: 720,
@@ -250,7 +250,7 @@ export default function BookingSection() {
               boxSizing: 'border-box',
             }}
           >
-            <span style={{ color: '#FCD34D', fontWeight: 800 }}>“Entertainment for everyone. Good people deserve good music.”</span> Handling 17+ to 24+ monthly events from luxury weddings and Sweet 15s/16s to nightclub residencies, university concert series, and civic events for the Providence Mayor’s Office.
+            <span style={{ color: '#FFC700', fontWeight: 800 }}>“Entertainment for everyone. Good people deserve good music.”</span> Handling 17+ to 24+ monthly events from luxury weddings and Sweet 15s/16s to nightclub residencies, university concert series, and civic events for the Providence Mayor’s Office.
           </Typography>
         </Box>
 
@@ -271,8 +271,8 @@ export default function BookingSection() {
           <Paper
             sx={{
               p: { xs: 1.8, sm: 2.5 },
-              backgroundColor: '#111116',
-              border: '1px solid rgba(245, 158, 11, 0.25)',
+              backgroundColor: '#141414',
+              border: '1px solid rgba(255, 199, 0, 0.3)',
               borderRadius: 3,
               display: 'flex',
               alignItems: 'center',
@@ -288,8 +288,8 @@ export default function BookingSection() {
                 width: 38,
                 height: 38,
                 borderRadius: 2,
-                backgroundColor: 'rgba(245, 158, 11, 0.12)',
-                color: '#F59E0B',
+                backgroundColor: 'rgba(255, 199, 0, 0.12)',
+                color: '#FFC700',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -299,14 +299,14 @@ export default function BookingSection() {
               <EmailIcon fontSize="small" />
             </Box>
             <Box sx={{ minWidth: 0, width: '100%' }}>
-              <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
+              <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
                 DIRECT BOOKING EMAIL
               </Typography>
               <Typography
                 component="a"
                 href={`mailto:${DJ_PROFILE.bookingEmail}`}
                 sx={{
-                  color: '#FFFFFF',
+                  color: '#FDFBF0',
                   fontWeight: 800,
                   textDecoration: 'none',
                   fontSize: { xs: '0.82rem', sm: '0.95rem' },
@@ -315,7 +315,7 @@ export default function BookingSection() {
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',
                   maxWidth: '100%',
-                  '&:hover': { color: '#F59E0B' },
+                  '&:hover': { color: '#FFC700' },
                 }}
               >
                 {DJ_PROFILE.bookingEmail}
@@ -327,8 +327,8 @@ export default function BookingSection() {
           <Paper
             sx={{
               p: { xs: 1.8, sm: 2.5 },
-              backgroundColor: '#111116',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              backgroundColor: '#141414',
+              border: '1px solid rgba(253, 251, 240, 0.12)',
               borderRadius: 3,
               display: 'flex',
               alignItems: 'center',
@@ -344,8 +344,8 @@ export default function BookingSection() {
                 width: 38,
                 height: 38,
                 borderRadius: 2,
-                backgroundColor: 'rgba(6, 182, 212, 0.12)',
-                color: '#06B6D4',
+                backgroundColor: 'rgba(255, 199, 0, 0.1)',
+                color: '#FFC700',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -355,10 +355,10 @@ export default function BookingSection() {
               <EventAvailableIcon fontSize="small" />
             </Box>
             <Box sx={{ minWidth: 0, width: '100%' }}>
-              <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
+              <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
                 DIRECT ARTIST BOOKING
               </Typography>
-              <Typography variant="body2" sx={{ color: '#FFFFFF', fontWeight: 800, fontSize: { xs: '0.82rem', sm: '0.95rem' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              <Typography variant="body2" sx={{ color: '#FDFBF0', fontWeight: 800, fontSize: { xs: '0.82rem', sm: '0.95rem' }, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 24–48h Response Time
               </Typography>
             </Box>
@@ -372,8 +372,8 @@ export default function BookingSection() {
             rel="noopener noreferrer"
             sx={{
               p: { xs: 1.8, sm: 2.5 },
-              backgroundColor: '#111116',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              backgroundColor: '#141414',
+              border: '1px solid rgba(253, 251, 240, 0.12)',
               borderRadius: 3,
               display: 'flex',
               alignItems: 'center',
@@ -386,10 +386,10 @@ export default function BookingSection() {
               cursor: 'pointer',
               transition: 'all 0.2s ease',
               '&:hover': {
-                borderColor: '#A855F7',
+                borderColor: '#FFC700',
                 transform: 'translateY(-2px)',
                 '& .base-text': {
-                  color: '#A855F7',
+                  color: '#FFC700',
                   textDecoration: 'underline',
                 },
               },
@@ -400,8 +400,8 @@ export default function BookingSection() {
                 width: 38,
                 height: 38,
                 borderRadius: 2,
-                backgroundColor: 'rgba(168, 85, 247, 0.12)',
-                color: '#A855F7',
+                backgroundColor: 'rgba(253, 251, 240, 0.08)',
+                color: '#EDE7CB',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -411,10 +411,10 @@ export default function BookingSection() {
               <LocationCityIcon fontSize="small" />
             </Box>
             <Box sx={{ minWidth: 0, width: '100%' }}>
-              <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
+              <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 700, textTransform: 'uppercase', display: 'block', fontSize: '0.62rem' }}>
                 HOME BASE
               </Typography>
-              <Typography className="base-text" variant="body2" sx={{ color: '#FFFFFF', fontWeight: 800, fontSize: { xs: '0.82rem', sm: '0.95rem' }, transition: 'color 0.2s', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              <Typography className="base-text" variant="body2" sx={{ color: '#FDFBF0', fontWeight: 800, fontSize: { xs: '0.82rem', sm: '0.95rem' }, transition: 'color 0.2s', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 Providence, Rhode Island
               </Typography>
             </Box>
@@ -431,8 +431,8 @@ export default function BookingSection() {
             width: '100%',
             mx: 'auto',
             p: { xs: 2, sm: 4, md: 5 },
-            backgroundColor: '#111116',
-            border: '1px solid rgba(245, 158, 11, 0.3)',
+            backgroundColor: '#141414',
+            border: '1px solid rgba(255, 199, 0, 0.3)',
             borderRadius: { xs: 3, sm: 4 },
             boxShadow: '0 24px 60px rgba(0, 0, 0, 0.7)',
             position: 'relative',
@@ -448,16 +448,16 @@ export default function BookingSection() {
               right: 0,
               width: 250,
               height: 250,
-              background: 'radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, rgba(0,0,0,0) 70%)',
+              background: 'radial-gradient(circle, rgba(255, 199, 0, 0.08) 0%, rgba(0,0,0,0) 70%)',
               pointerEvents: 'none',
             }}
           />
 
           <Box sx={{ mb: { xs: 2.5, sm: 3.5 }, width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
-            <Typography variant="h5" sx={{ fontWeight: 900, color: '#FFFFFF', mb: 0.5, fontSize: { xs: '1.2rem', sm: '1.5rem' } }}>
+            <Typography variant="h5" sx={{ fontWeight: 900, color: '#FDFBF0', mb: 0.5, fontSize: { xs: '1.2rem', sm: '1.5rem' } }}>
               Event Inquiry & Booking Request
             </Typography>
-            <Typography variant="body2" sx={{ color: '#94A3B8', fontSize: '0.85rem', mb: 2 }}>
+            <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.75)', fontSize: '0.85rem', mb: 2 }}>
               Planning makes perfection. Attention to detail, itemized timelines, and custom sound engineering dispatched directly to Gibran.
             </Typography>
 
@@ -470,11 +470,11 @@ export default function BookingSection() {
                     py: 0.4,
                     px: 1.2,
                     borderRadius: '50px',
-                    backgroundColor: 'rgba(245, 158, 11, 0.08)',
-                    border: '1px solid rgba(245, 158, 11, 0.25)',
+                    backgroundColor: 'rgba(255, 199, 0, 0.08)',
+                    border: '1px solid rgba(255, 199, 0, 0.25)',
                     fontSize: { xs: '0.62rem', sm: '0.66rem' },
                     fontWeight: 800,
-                    color: '#FCD34D',
+                    color: '#FFC700',
                     letterSpacing: '0.04em',
                     maxWidth: '100%',
                     boxSizing: 'border-box',
@@ -508,11 +508,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Your Name / Organization <span style={{ color: '#F59E0B' }}>*</span>
+                Your Name / Organization <span style={{ color: '#FFC700' }}>*</span>
               </Typography>
               <TextField
                 fullWidth
@@ -535,11 +535,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Email Address <span style={{ color: '#F59E0B' }}>*</span>
+                Email Address <span style={{ color: '#FFC700' }}>*</span>
               </Typography>
               <TextField
                 fullWidth
@@ -563,11 +563,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Phone Number <span style={{ color: '#64748B', fontWeight: 600 }}>(Optional)</span>
+                Phone Number <span style={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 600 }}>(Optional)</span>
               </Typography>
               <TextField
                 fullWidth
@@ -589,20 +589,20 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Event Type <span style={{ color: '#F59E0B' }}>*</span>
+                Event Type <span style={{ color: '#FFC700' }}>*</span>
               </Typography>
               <Select
                 fullWidth
                 value={formData.eventType}
                 onChange={handleChange('eventType')}
                 sx={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                  backgroundColor: 'rgba(253, 251, 240, 0.03)',
                   borderRadius: '10px',
-                  color: '#F8FAFC',
+                  color: '#FDFBF0',
                   fontSize: { xs: '0.82rem', sm: '0.88rem' },
                   width: '100%',
                   maxWidth: '100%',
@@ -615,13 +615,13 @@ export default function BookingSection() {
                     pr: '32px !important',
                   },
                   '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: 'rgba(255, 255, 255, 0.12)',
+                    borderColor: 'rgba(253, 251, 240, 0.12)',
                   },
                   '&:hover .MuiOutlinedInput-notchedOutline': {
-                    borderColor: 'rgba(245, 158, 11, 0.6)',
+                    borderColor: 'rgba(255, 199, 0, 0.6)',
                   },
                   '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#F59E0B',
+                    borderColor: '#FFC700',
                     borderWidth: '1.5px',
                   },
                 }}
@@ -644,11 +644,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Event Date <span style={{ color: '#F59E0B' }}>*</span>
+                Event Date <span style={{ color: '#FFC700' }}>*</span>
               </Typography>
               <TextField
                 fullWidth
@@ -679,11 +679,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Venue / Location <span style={{ color: '#F59E0B' }}>*</span>
+                Venue / Location <span style={{ color: '#FFC700' }}>*</span>
               </Typography>
               <TextField
                 fullWidth
@@ -706,11 +706,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Estimated Attendance / Crowd Size <span style={{ color: '#64748B', fontWeight: 600 }}>(Optional)</span>
+                Estimated Attendance / Crowd Size <span style={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 600 }}>(Optional)</span>
               </Typography>
               <TextField
                 fullWidth
@@ -731,11 +731,11 @@ export default function BookingSection() {
                   fontWeight: 800,
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase',
-                  color: '#CBD5E1',
+                  color: '#EDE7CB',
                   mb: 0.6,
                 }}
               >
-                Event Details & Sound Requirements <span style={{ color: '#64748B', fontWeight: 600 }}>(Optional)</span>
+                Event Details & Sound Requirements <span style={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 600 }}>(Optional)</span>
               </Typography>
               <TextField
                 fullWidth
@@ -750,7 +750,7 @@ export default function BookingSection() {
           </Box>
 
           {/* Clean Single Action Submit Button */}
-          <Box sx={{ pt: 1.8, borderTop: '1px solid rgba(255, 255, 255, 0.08)', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
+          <Box sx={{ pt: 1.8, borderTop: '1px solid rgba(253, 251, 240, 0.08)', width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
             <Button
               type="submit"
               variant="contained"
@@ -772,8 +772,8 @@ export default function BookingSection() {
             >
               {isSubmitting ? 'Dispatching Inquiry...' : 'Send Booking Inquiry'}
             </Button>
-            <Typography variant="caption" display="block" align="center" sx={{ color: '#64748B', mt: 1.2, fontSize: { xs: '0.68rem', sm: '0.72rem' } }}>
-              Direct dispatch to <span style={{ color: '#F59E0B' }}>gibran@me.com</span>
+            <Typography variant="caption" display="block" align="center" sx={{ color: 'rgba(253, 251, 240, 0.6)', mt: 1.2, fontSize: { xs: '0.68rem', sm: '0.72rem' } }}>
+              Direct dispatch to <span style={{ color: '#FFC700' }}>gibran@me.com</span>
             </Typography>
           </Box>
         </Paper>

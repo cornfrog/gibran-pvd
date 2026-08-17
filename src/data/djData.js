@@ -97,7 +97,7 @@ export const SOUND_PILLARS = [
     id: 'latin',
     title: 'Reggaeton & Latin House',
     tag: 'Cafecito Social Club',
-    color: '#F59E0B',
+    color: '#FFC700',
     description: 'Dembow rhythms, percussive Latin grooves, and anthemic club edits that electrify Rhode Island and Boston nightlife.',
     vibe: '96 - 118 BPM • Pure Movement',
   },
@@ -324,7 +324,7 @@ export const TOUR_DATES_2026 = [
     time: '8:00 PM – 2:00 AM',
     genre: 'House & Sunset Dance Classics',
     status: 'CONFIRMED',
-    tagColor: '#F59E0B',
+    tagColor: '#FFC700',
   },
   {
     date: 'JUNE 06, 2026',
@@ -390,6 +390,6 @@ export const TOUR_DATES_2026 = [
     time: '8:00 PM – 3:00 AM',
     genre: 'Flagship NYE Open-Format Headliner',
     status: 'ANNUAL RESIDENCY',
-    tagColor: '#F59E0B',
+    tagColor: '#FFC700',
   },
 ];

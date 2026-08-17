@@ -40,7 +40,7 @@ export default function SoundProfile() {
       id="sound"
       sx={{
         py: { xs: 8, sm: 11, md: 14 },
-        backgroundColor: '#07070A',
+        backgroundColor: '#0B0B0B',
         position: 'relative',
         width: '100%',
         maxWidth: '100vw',
@@ -56,7 +56,7 @@ export default function SoundProfile() {
           width: { xs: 160, md: 450 },
           height: { xs: 160, md: 450 },
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255, 199, 0, 0.08) 0%, transparent 70%)',
           filter: 'blur(60px)',
           pointerEvents: 'none',
         }}
@@ -87,16 +87,16 @@ export default function SoundProfile() {
               px: 1.8,
               mb: 1.8,
               borderRadius: '50px',
-              backgroundColor: 'rgba(6, 182, 212, 0.08)',
-              border: '1px solid rgba(6, 182, 212, 0.35)',
+              backgroundColor: 'rgba(255, 199, 0, 0.08)',
+              border: '1px solid rgba(255, 199, 0, 0.35)',
               boxSizing: 'border-box',
               maxWidth: '100%',
             }}
           >
-            <GraphicEqIcon sx={{ color: '#06B6D4', fontSize: 16, display: 'block' }} />
+            <GraphicEqIcon sx={{ color: '#FFC700', fontSize: 16, display: 'block' }} />
             <Typography
               sx={{
-                color: '#06B6D4',
+                color: '#FFC700',
                 fontWeight: 800,
                 fontSize: { xs: '0.66rem', sm: '0.74rem' },
                 letterSpacing: '0.06em',
@@ -122,15 +122,15 @@ export default function SoundProfile() {
               mx: 'auto',
               display: 'block',
               whiteSpace: { xs: 'normal', md: 'nowrap' },
-              color: '#FFFFFF',
+              color: '#FDFBF0',
             }}
           >
-            THE <span style={{ color: '#F59E0B', textShadow: '0 0 30px rgba(245, 158, 11, 0.35)' }}>OPEN-FORMAT</span> DNA
+            THE <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>OPEN-FORMAT</span> DNA
           </Typography>
           <Typography
             variant="body1"
             sx={{
-              color: '#94A3B8',
+              color: 'rgba(253, 251, 240, 0.75)',
               fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
               lineHeight: 1.6,
               maxWidth: 680,
@@ -164,9 +164,9 @@ export default function SoundProfile() {
                 p: { xs: 2.8, sm: 3.5 },
                 position: 'relative',
                 overflow: 'hidden',
-                backgroundColor: '#0E0E14',
+                backgroundColor: '#141414',
                 backgroundImage: `radial-gradient(ellipse 70% 60% at 95% 10%, ${pillar.color}22 0%, transparent 70%)`,
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                border: '1px solid rgba(253, 251, 240, 0.12)',
                 borderRadius: 4,
                 boxSizing: 'border-box',
                 transition: 'all 0.3s ease',
@@ -269,7 +269,7 @@ export default function SoundProfile() {
                   sx={{
                     fontWeight: 900,
                     mb: 0.8,
-                    color: '#FFFFFF',
+                    color: '#FDFBF0',
                     fontSize: { xs: '1.2rem', sm: '1.4rem' },
                     lineHeight: 1.25,
                   }}
@@ -280,7 +280,7 @@ export default function SoundProfile() {
                 <Typography
                   variant="body2"
                   sx={{
-                    color: '#94A3B8',
+                    color: 'rgba(253, 251, 240, 0.75)',
                     lineHeight: 1.65,
                     fontSize: '0.88rem',
                     mb: 2.8,
@@ -293,7 +293,7 @@ export default function SoundProfile() {
               <Box
                 sx={{
                   pt: 1.8,
-                  borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                  borderTop: '1px solid rgba(253, 251, 240, 0.08)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
@@ -302,7 +302,7 @@ export default function SoundProfile() {
                   zIndex: 1,
                 }}
               >
-                <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', fontSize: '0.68rem' }}>
+                <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.5)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', fontSize: '0.68rem' }}>
                   TEMPO & VIBE
                 </Typography>
                 <Typography
@@ -326,19 +326,19 @@ export default function SoundProfile() {
           <Paper
             sx={{
               p: { xs: 3, sm: 5, md: 6 },
-              backgroundColor: '#0C0C12',
-              backgroundImage: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(245, 158, 11, 0.12), transparent 70%), radial-gradient(ellipse 60% 40% at 90% 90%, rgba(168, 85, 247, 0.08), transparent 70%)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
+              backgroundColor: '#141414',
+              backgroundImage: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255, 199, 0, 0.12), transparent 70%), radial-gradient(ellipse 60% 40% at 90% 90%, rgba(253, 251, 240, 0.04), transparent 70%)',
+              border: '1px solid rgba(255, 199, 0, 0.3)',
               borderRadius: 4,
-              boxShadow: '0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.1)',
+              boxShadow: '0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 199, 0, 0.1)',
               position: 'relative',
               overflow: 'hidden',
             }}
           >
             {/* Top Badge */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-              <SparkleIcon sx={{ color: '#F59E0B', fontSize: 18 }} />
-              <Typography variant="overline" sx={{ color: '#F59E0B', fontWeight: 800, letterSpacing: '0.08em', fontSize: '0.72rem' }}>
+              <SparkleIcon sx={{ color: '#FFC700', fontSize: 18 }} />
+              <Typography variant="overline" sx={{ color: '#FFC700', fontWeight: 800, letterSpacing: '0.08em', fontSize: '0.72rem' }}>
                 ARTIST PEDIGREE & HERITAGE • SOUND & STAGE MASTERY
               </Typography>
             </Box>
@@ -352,11 +352,11 @@ export default function SoundProfile() {
                 mb: 3.5,
                 p: { xs: 2.2, sm: 3 },
                 borderRadius: 3,
-                backgroundColor: 'rgba(245, 158, 11, 0.08)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
+                backgroundColor: 'rgba(255, 199, 0, 0.08)',
+                border: '1px solid rgba(255, 199, 0, 0.35)',
               }}
             >
-              <QuoteIcon sx={{ color: '#F59E0B', fontSize: { xs: 28, sm: 36 }, transform: 'rotate(180deg)', flexShrink: 0 }} />
+              <QuoteIcon sx={{ color: '#FFC700', fontSize: { xs: 28, sm: 36 }, transform: 'rotate(180deg)', flexShrink: 0 }} />
               <Box>
                 <Typography
                   variant="h3"
@@ -364,14 +364,14 @@ export default function SoundProfile() {
                     fontFamily: '"Syne", sans-serif',
                     fontWeight: 900,
                     fontSize: { xs: '1.25rem', sm: '1.65rem', md: '1.95rem' },
-                    color: '#FFFFFF',
+                    color: '#FDFBF0',
                     lineHeight: 1.2,
                     mb: 0.8,
                   }}
                 >
                   “GibranPVD is energy. Positive. Pure. Raw. Fierce.”
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#FCD34D', fontWeight: 700, fontSize: { xs: '0.82rem', sm: '0.92rem' } }}>
+                <Typography variant="body2" sx={{ color: '#FFC700', fontWeight: 700, fontSize: { xs: '0.82rem', sm: '0.92rem' } }}>
                   Kinesthetic • Professional • Fun • “Stand Under the Tent & Move It Wider”
                 </Typography>
               </Box>
@@ -384,7 +384,7 @@ export default function SoundProfile() {
                   key={idx}
                   variant="body1"
                   sx={{
-                    color: '#CBD5E1',
+                    color: 'rgba(253, 251, 240, 0.8)',
                     fontSize: { xs: '0.88rem', sm: '0.98rem' },
                     lineHeight: 1.7,
                   }}
@@ -401,32 +401,32 @@ export default function SoundProfile() {
                 gridTemplateColumns: { xs: '1fr', md: 'repeat(3, 1fr)' },
                 gap: { xs: 2.5, sm: 3 },
                 pt: 3.5,
-                borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                borderTop: '1px solid rgba(253, 251, 240, 0.08)',
               }}
             >
               {/* Box 1: Event & Venue Specializations */}
               <Paper
                 sx={{
                   p: { xs: 2.2, sm: 2.8 },
-                  backgroundColor: '#101018',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  backgroundColor: '#181818',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   borderRadius: 3,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
-                  <CelebrationIcon sx={{ color: '#F59E0B', fontSize: 18 }} />
-                  <Typography variant="subtitle2" sx={{ color: '#FFF', fontWeight: 800, fontSize: '0.88rem' }}>
+                  <CelebrationIcon sx={{ color: '#FFC700', fontSize: 18 }} />
+                  <Typography variant="subtitle2" sx={{ color: '#FDFBF0', fontWeight: 800, fontSize: '0.88rem' }}>
                     Event & Venue Specializations
                   </Typography>
                 </Box>
-                <Typography variant="caption" sx={{ color: '#94A3B8', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
+                <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.7)', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
                   17–24+ Events Handled Monthly Across New England
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                   {GIBRAN_BIO.eventSpecializations.map((spec) => (
                     <Box key={spec} sx={{ display: 'flex', alignItems: 'center', gap: 0.8 }}>
-                      <CheckCircleIcon sx={{ fontSize: 14, color: '#F59E0B', flexShrink: 0 }} />
-                      <Typography variant="caption" sx={{ color: '#E2E8F0', fontWeight: 700, fontSize: '0.76rem' }}>
+                      <CheckCircleIcon sx={{ fontSize: 14, color: '#FFC700', flexShrink: 0 }} />
+                      <Typography variant="caption" sx={{ color: '#EDE7CB', fontWeight: 700, fontSize: '0.76rem' }}>
                         {spec}
                       </Typography>
                     </Box>
@@ -438,25 +438,25 @@ export default function SoundProfile() {
               <Paper
                 sx={{
                   p: { xs: 2.2, sm: 2.8 },
-                  backgroundColor: '#101018',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  backgroundColor: '#181818',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   borderRadius: 3,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
                   <StadiumIcon sx={{ color: '#38BDF8', fontSize: 18 }} />
-                  <Typography variant="subtitle2" sx={{ color: '#FFF', fontWeight: 800, fontSize: '0.88rem' }}>
+                  <Typography variant="subtitle2" sx={{ color: '#FDFBF0', fontWeight: 800, fontSize: '0.88rem' }}>
                     Tour MC & Concert Support
                   </Typography>
                 </Box>
-                <Typography variant="caption" sx={{ color: '#94A3B8', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
+                <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.7)', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
                   National Bus & Arena Stage Direct Support
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                   {GIBRAN_BIO.tourCredentials.map((credit) => (
                     <Box key={credit} sx={{ display: 'flex', alignItems: 'center', gap: 0.8 }}>
                       <CheckCircleIcon sx={{ fontSize: 14, color: '#38BDF8', flexShrink: 0 }} />
-                      <Typography variant="caption" sx={{ color: '#E2E8F0', fontWeight: 700, fontSize: '0.76rem' }}>
+                      <Typography variant="caption" sx={{ color: '#EDE7CB', fontWeight: 700, fontSize: '0.76rem' }}>
                         {credit}
                       </Typography>
                     </Box>
@@ -468,25 +468,25 @@ export default function SoundProfile() {
               <Paper
                 sx={{
                   p: { xs: 2.2, sm: 2.8 },
-                  backgroundColor: '#101018',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  backgroundColor: '#181818',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   borderRadius: 3,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
-                  <TuneIcon sx={{ color: '#EC4899', fontSize: 18 }} />
-                  <Typography variant="subtitle2" sx={{ color: '#FFF', fontWeight: 800, fontSize: '0.88rem' }}>
+                  <TuneIcon sx={{ color: '#FFC700', fontSize: 18 }} />
+                  <Typography variant="subtitle2" sx={{ color: '#FDFBF0', fontWeight: 800, fontSize: '0.88rem' }}>
                     Sound & Production Power
                   </Typography>
                 </Box>
-                <Typography variant="caption" sx={{ color: '#94A3B8', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
+                <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.7)', display: 'block', mb: 1.8, fontSize: '0.74rem' }}>
                   Live Stem Separation, EV Active PA & Multi-Zone
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                   {GIBRAN_BIO.soundCapabilities.map((cap) => (
                     <Box key={cap} sx={{ display: 'flex', alignItems: 'center', gap: 0.8 }}>
-                      <CheckCircleIcon sx={{ fontSize: 14, color: '#EC4899', flexShrink: 0 }} />
-                      <Typography variant="caption" sx={{ color: '#E2E8F0', fontWeight: 700, fontSize: '0.76rem' }}>
+                      <CheckCircleIcon sx={{ fontSize: 14, color: '#FFC700', flexShrink: 0 }} />
+                      <Typography variant="caption" sx={{ color: '#EDE7CB', fontWeight: 700, fontSize: '0.76rem' }}>
                         {cap}
                       </Typography>
                     </Box>
@@ -500,7 +500,7 @@ export default function SoundProfile() {
               sx={{
                 mt: 4,
                 pt: 3.5,
-                borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                borderTop: '1px solid rgba(253, 251, 240, 0.08)',
                 display: 'grid',
                 gridTemplateColumns: { xs: '1fr', md: '1.2fr 1fr' },
                 gap: { xs: 2.5, sm: 3 },
@@ -510,24 +510,24 @@ export default function SoundProfile() {
               <Paper
                 sx={{
                   p: { xs: 2.2, sm: 3 },
-                  backgroundColor: '#101018',
-                  border: '1px solid rgba(245, 158, 11, 0.25)',
+                  backgroundColor: '#181818',
+                  border: '1px solid rgba(255, 199, 0, 0.25)',
                   borderRadius: 3,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.2 }}>
-                  <GroupIcon sx={{ color: '#F59E0B', fontSize: 20 }} />
-                  <Typography variant="subtitle1" sx={{ color: '#FFF', fontWeight: 900, fontSize: '0.96rem' }}>
+                  <GroupIcon sx={{ color: '#FFC700', fontSize: 20 }} />
+                  <Typography variant="subtitle1" sx={{ color: '#FDFBF0', fontWeight: 900, fontSize: '0.96rem' }}>
                     Lo Key DJ Collective & Underground Sound
                   </Typography>
                 </Box>
-                <Typography variant="body2" sx={{ color: '#CBD5E1', fontSize: '0.84rem', lineHeight: 1.6, mb: 1.8 }}>
+                <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.8)', fontSize: '0.84rem', lineHeight: 1.6, mb: 1.8 }}>
                   Member of Providence’s 7-DJ powerhouse collective <strong>Lo Key</strong>. Pushing unconventional sounds across New England—specializing in Baltimore & NOLA Bounce (New Orleans), Jersey Club, Jersey House, and Chicago grooves alongside Latin rhythms.
                 </Typography>
                 
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, pt: 1.5, borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                  <CommunityIcon sx={{ color: '#34D399', fontSize: 18 }} />
-                  <Typography variant="caption" sx={{ color: '#E2E8F0', fontWeight: 700, fontSize: '0.78rem' }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, pt: 1.5, borderTop: '1px solid rgba(253, 251, 240, 0.06)' }}>
+                  <CommunityIcon sx={{ color: '#FFC700', fontSize: 18 }} />
+                  <Typography variant="caption" sx={{ color: '#EDE7CB', fontWeight: 700, fontSize: '0.78rem' }}>
                     AS220 Inner-City Youth Arts & DJ Program Lead (Providence, RI)
                   </Typography>
                 </Box>
@@ -537,26 +537,26 @@ export default function SoundProfile() {
               <Paper
                 sx={{
                   p: { xs: 2.2, sm: 3 },
-                  backgroundColor: '#101018',
-                  border: '1px solid rgba(56, 189, 248, 0.25)',
+                  backgroundColor: '#181818',
+                  border: '1px solid rgba(253, 251, 240, 0.12)',
                   borderRadius: 3,
                 }}
               >
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.2 }}>
                   <SpeakerIcon sx={{ color: '#38BDF8', fontSize: 20 }} />
-                  <Typography variant="subtitle1" sx={{ color: '#FFF', fontWeight: 900, fontSize: '0.96rem' }}>
+                  <Typography variant="subtitle1" sx={{ color: '#FDFBF0', fontWeight: 900, fontSize: '0.96rem' }}>
                     Touring Sound Rig & Live Switchblade Setup
                   </Typography>
                 </Box>
-                <Typography variant="caption" sx={{ color: '#94A3B8', display: 'block', mb: 1.5, fontSize: '0.74rem' }}>
+                <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.7)', display: 'block', mb: 1.5, fontSize: '0.74rem' }}>
                   100% Self-Contained Weatherproof Club & Arena Rig
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.8 }}>
                   {GIBRAN_BIO.rig.map((item) => (
                     <Box key={item.name} sx={{ display: 'flex', alignItems: 'flex-start', gap: 0.8 }}>
                       <TuneIcon sx={{ fontSize: 14, color: '#38BDF8', mt: 0.3, flexShrink: 0 }} />
-                      <Typography variant="caption" sx={{ color: '#E2E8F0', fontSize: '0.76rem', lineHeight: 1.4 }}>
-                        <strong style={{ color: '#FFF' }}>{item.name}:</strong> {item.detail}
+                      <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.8)', fontSize: '0.76rem', lineHeight: 1.4 }}>
+                        <strong style={{ color: '#FDFBF0' }}>{item.name}:</strong> {item.detail}
                       </Typography>
                     </Box>
                   ))}
@@ -570,18 +570,18 @@ export default function SoundProfile() {
                 mt: 3.5,
                 p: 2.8,
                 borderRadius: 2.5,
-                background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(168, 85, 247, 0.08) 100%)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
+                background: 'linear-gradient(135deg, rgba(255, 199, 0, 0.12) 0%, rgba(253, 251, 240, 0.05) 100%)',
+                border: '1px solid rgba(255, 199, 0, 0.35)',
                 textAlign: 'center',
               }}
             >
-              <Typography variant="subtitle1" sx={{ color: '#FCD34D', fontWeight: 900, fontSize: { xs: '0.92rem', sm: '1.08rem' }, mb: 0.8 }}>
+              <Typography variant="subtitle1" sx={{ color: '#FFC700', fontWeight: 900, fontSize: { xs: '0.92rem', sm: '1.08rem' }, mb: 0.8 }}>
                 “Entertainment for everyone. Good people deserve good music.”
               </Typography>
-              <Typography variant="body2" sx={{ color: '#CBD5E1', fontSize: { xs: '0.8rem', sm: '0.88rem' }, lineHeight: 1.6, mb: 1, maxWidth: 840, mx: 'auto' }}>
+              <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.85)', fontSize: { xs: '0.8rem', sm: '0.88rem' }, lineHeight: 1.6, mb: 1, maxWidth: 840, mx: 'auto' }}>
                 “I’m just looking to stand under the tent and not be the tent. What can I do inside of that tent for my community that can better everybody? If I can help move the tent just a little wider so that more people can be under that tent, that’s what matters.”
               </Typography>
-              <Typography variant="caption" sx={{ color: '#94A3B8', fontSize: '0.76rem', fontWeight: 700, display: 'block' }}>
+              <Typography variant="caption" sx={{ color: 'rgba(253, 251, 240, 0.65)', fontSize: '0.76rem', fontWeight: 700, display: 'block' }}>
                 “If I can sway one person in a room full of nobody, that’s my superpower—because I can sway a thousand people with no problem.”
               </Typography>
             </Box>

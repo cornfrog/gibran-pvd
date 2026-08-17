@@ -22,7 +22,7 @@ function App() {
             overflowX: 'hidden',
             display: 'flex',
             flexDirection: 'column',
-            backgroundColor: '#070709',
+            backgroundColor: '#0B0B0B',
             position: 'relative',
           }}
         >
