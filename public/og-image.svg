@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070709"/>
+      <stop offset="50%" stop-color="#0E0E14"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="glowAmber" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="15%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowAmber)"/>
+  <rect width="1200" height="630" fill="url(#glowPurple)"/>
+
+  <!-- Border Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="24" fill="none" stroke="rgba(245, 158, 11, 0.3)" stroke-width="2"/>
+
+  <!-- Top Category Pill -->
+  <g transform="translate(80, 85)">
+    <rect width="320" height="38" rx="19" fill="rgba(245, 158, 11, 0.12)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"/>
+    <circle cx="24" cy="19" r="5" fill="#F59E0B"/>
+    <text x="38" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#FCD34D" letter-spacing="2">PROVIDENCE, RI • EST. 2004</text>
+  </g>
+
+  <!-- Main Headline Title -->
+  <g transform="translate(80, 220)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="82" font-weight="900" fill="#FFFFFF" letter-spacing="-2">
+      GIBRAN<tspan fill="url(#gold)">PVD</tspan>
+    </text>
+  </g>
+
+  <!-- Sub-headline / Role Tagline -->
+  <g transform="translate(80, 280)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#CBD5E1" letter-spacing="1">
+      FULL-TIME OPEN-FORMAT DJ <tspan fill="#64748B">•</tspan> <tspan fill="#38BDF8">CONCERT TOUR MC</tspan> <tspan fill="#64748B">•</tspan> <tspan fill="#F472B6">LIVE SOUND</tspan>
+    </text>
+  </g>
+
+  <!-- Quote Motto -->
+  <g transform="translate(80, 345)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" fill="#94A3B8" font-style="italic">
+      “Entertainment for everyone. Good people deserve good music.”
+    </text>
+  </g>
+
+  <!-- Stats Strip (4 Badges) -->
+  <g transform="translate(80, 420)">
+    <!-- Stat 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="235" height="105" rx="16" fill="rgba(17, 17, 24, 0.9)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1.5"/>
+      <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#F59E0B">7–8+</text>
+      <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1">YEARS PRO DJ</text>
+    </g>
+
+    <!-- Stat 2 -->
+    <g transform="translate(260, 0)">
+      <rect width="235" height="105" rx="16" fill="rgba(17, 17, 24, 0.9)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+      <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#38BDF8">17–24+</text>
+      <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1">MONTHLY EVENTS</text>
+    </g>
+
+    <!-- Stat 3 -->
+    <g transform="translate(520, 0)">
+      <rect width="235" height="105" rx="16" fill="rgba(17, 17, 24, 0.9)" stroke="rgba(244, 114, 182, 0.3)" stroke-width="1.5"/>
+      <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#F472B6">15+ Yrs</text>
+      <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1">TOUR MC & STAGE</text>
+    </g>
+
+    <!-- Stat 4 -->
+    <g transform="translate(780, 0)">
+      <rect width="260" height="105" rx="16" fill="rgba(17, 17, 24, 0.9)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5"/>
+      <text x="24" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#34D399">100%</text>
+      <text x="24" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1">SELF-CONTAINED RIG</text>
+    </g>
+  </g>
+
+  <!-- Footer Attribution -->
+  <g transform="translate(80, 570)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#64748B">
+      RESIDENCIES: THE HOT CLUB • FISH CO • CAFE AVA • WATERFIRE ARTS CENTER • GIBRANPVD.COM
+    </text>
+  </g>
+</svg>

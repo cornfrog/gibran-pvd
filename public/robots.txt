@@ -1,0 +1,6 @@
+# Robots.txt for GIBRANPVD (https://gibranpvd.com)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://gibranpvd.com/sitemap.xml
