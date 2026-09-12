@@ -182,62 +182,71 @@ export default function Hero() {
             />
           </Box>
 
-          {/* Calibrated Headline with Good People Signature Logo Underneath to the Right */}
+          {/* Headline: Large Good People Banner Logo with GibranPVD small and to the right */}
           <Box sx={{ position: 'relative', width: 'fit-content', mx: 'auto', maxWidth: '100%', mb: { xs: 1.8, sm: 2.4 } }}>
-            <Typography
-              variant="h1"
-              component="h1"
-              sx={{
-                fontSize: {
-                  xs: 'clamp(1.9rem, 7.8vw, 2.7rem)',
-                  sm: '3.6rem',
-                  md: '4.6rem',
-                  lg: '5.4rem',
-                },
-                lineHeight: 1.05,
-                fontWeight: 900,
-                letterSpacing: { xs: '0.01em', md: '-0.02em' },
-                textTransform: 'uppercase',
-                color: '#FDFBF0',
-                textShadow: '0 4px 30px rgba(0,0,0,0.8)',
-                display: 'block',
-                textAlign: 'center',
-                width: '100%',
-                maxWidth: '100%',
-                mx: 'auto',
-                boxSizing: 'border-box',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              GIBRAN<span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.5)' }}>PVD</span>
-            </Typography>
-
-            {/* Official "Good People" Logo under name and to the right */}
+            {/* Main Centerpiece: Large "Good People" Logo */}
             <Box
               sx={{
                 display: 'flex',
-                justifyContent: 'flex-end',
+                justifyContent: 'center',
                 alignItems: 'center',
-                mt: { xs: -0.8, sm: -1.4, md: -1.8 },
-                pr: { xs: 0.5, sm: 1.5, md: 2 },
+                width: '100%',
               }}
             >
               <Box
                 component="img"
                 src="/banner.png"
-                alt="GibranPVD - Good People"
+                alt="Good People"
                 sx={{
-                  height: { xs: '24px', sm: '34px', md: '42px' },
-                  width: 'auto',
+                  width: { xs: 'min(84vw, 320px)', sm: '420px', md: '520px', lg: '620px' },
+                  height: 'auto',
+                  maxHeight: { xs: '90px', sm: '130px', md: '165px', lg: '195px' },
                   objectFit: 'contain',
-                  filter: 'drop-shadow(0 4px 14px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 16px rgba(255, 199, 0, 0.3))',
+                  filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 25px rgba(255, 199, 0, 0.35))',
+                  display: 'block',
+                  mx: 'auto',
+                  transition: 'transform 0.3s ease',
+                  '&:hover': {
+                    transform: 'scale(1.03)',
+                  },
+                }}
+              />
+            </Box>
+
+            {/* GibranPVD text: small and tucked tight under Good People logo to the right */}
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                mt: { xs: -1.5, sm: -2.5, md: -3.5, lg: -4.5 },
+                pr: { xs: 0.5, sm: 1.5, md: 2 },
+                position: 'relative',
+                zIndex: 2,
+              }}
+            >
+              <Typography
+                variant="h1"
+                component="h1"
+                sx={{
+                  fontSize: { xs: '0.95rem', sm: '1.25rem', md: '1.5rem', lg: '1.75rem' },
+                  lineHeight: 1.1,
+                  fontWeight: 900,
+                  letterSpacing: { xs: '0.04em', md: '0.06em' },
+                  textTransform: 'uppercase',
+                  color: '#FDFBF0',
+                  textShadow: '0 2px 20px rgba(0,0,0,0.8)',
+                  display: 'block',
+                  whiteSpace: 'nowrap',
                   transform: 'rotate(-2deg)',
                   transition: 'transform 0.3s ease',
                   '&:hover': {
                     transform: 'rotate(0deg) scale(1.06)',
                   },
                 }}
-              />
+              >
+                GIBRAN<span style={{ color: '#FFC700', textShadow: '0 0 20px rgba(255, 199, 0, 0.6)' }}>PVD</span>
+              </Typography>
             </Box>
           </Box>
 
@@ -378,7 +387,7 @@ export default function Hero() {
               </Typography>
             </Box>
             <Typography variant="caption" sx={{ color: '#FFC700', fontWeight: 800, letterSpacing: '0.03em', fontSize: { xs: '0.74rem', sm: '0.78rem' }, lineHeight: 1.4 }}>
-              The Hot Club <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> Fish Co <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> Cafe Ava <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> WaterFire
+              The Hot Club <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> Cafe Ava <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> WaterFire <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> Newport <span style={{ color: 'rgba(253, 251, 240, 0.4)', margin: '0 4px' }}>•</span> Boston
             </Typography>
           </Box>
 

@@ -249,7 +249,7 @@ export default function Navbar() {
               <Box
                 component="img"
                 src="/banner.png"
-                alt="GibranPVD - Good People"
+                alt="Good People - GibranPVD"
                 sx={{
                   height: { xs: '32px', sm: '42px' },
                   width: 'auto',
@@ -485,7 +485,7 @@ export default function Navbar() {
               <Box
                 component="img"
                 src="/banner.png"
-                alt="GibranPVD - Good People"
+                alt="Good People - GibranPVD"
                 sx={{
                   height: { xs: '30px', sm: '38px' },
                   width: 'auto',

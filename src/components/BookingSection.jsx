@@ -463,7 +463,7 @@ export default function BookingSection() {
 
             {/* Pro Rig & Scope Badges */}
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8, width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
-              {['PIONEER DDJ-SRT1000 RIG', 'ELECTRO-VOICE (EV) ACTIVE PA', 'EV 12" POWERED SUB', 'CHAUVET GIGBAR MOVING HEADS', 'REAL-TIME STEMS ISOLATION'].map((badge) => (
+              {['Rane Performer', 'ELECTRO-VOICE (EV) ACTIVE PA', 'EV 12" POWERED SUB', 'CHAUVET GIGBAR MOVING HEADS'].map((badge) => (
                 <Box
                   key={badge}
                   sx={{
@@ -773,7 +773,7 @@ export default function BookingSection() {
               {isSubmitting ? 'Dispatching Inquiry...' : 'Send Booking Inquiry'}
             </Button>
             <Typography variant="caption" display="block" align="center" sx={{ color: 'rgba(253, 251, 240, 0.6)', mt: 1.2, fontSize: { xs: '0.68rem', sm: '0.72rem' } }}>
-              Direct dispatch to <span style={{ color: '#FFC700' }}>gibran@me.com</span>
+              Direct dispatch to <span style={{ color: '#FFC700' }}>goodpeoplepvd@gmail.com</span>
             </Typography>
           </Box>
         </Paper>

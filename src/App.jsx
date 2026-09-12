@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SoundProfile from './components/SoundProfile';
 import MixesSection from './components/MixesSection';
+import MediaCarousel from './components/MediaCarousel';
 import ResidenciesSection from './components/ResidenciesSection';
 import BookingSection from './components/BookingSection';
 import Footer from './components/Footer';
@@ -31,6 +32,7 @@ function App() {
             <Hero />
             <SoundProfile />
             <MixesSection />
+            <MediaCarousel />
             <ResidenciesSection />
             <BookingSection />
           </Box>

@@ -1,3 +1,15 @@
+export const CIRCUIT_CITIES = [
+  'New Bedford',
+  'New Hampshire',
+  'Boston',
+  'NY',
+  'Newport',
+  'LA',
+  'Miami',
+  'DC',
+  'NJ',
+];
+
 export const DJ_PROFILE = {
   name: 'Gibran Borbon',
   stageName: 'GIBRANPVD',
@@ -5,7 +17,7 @@ export const DJ_PROFILE = {
   origin: 'Providence, Rhode Island',
   heritage: 'Dominican-American (Baní & Santiago roots)',
   highSchool: 'Hope High School Alum (Providence, RI)',
-  bookingEmail: 'gibran@me.com',
+  bookingEmail: 'goodpeoplepvd@gmail.com',
   motto: 'Entertainment for everyone. Good people deserve good music.',
   superpower: 'If I can sway one person in a room full of nobody, that’s my superpower—because I can sway a thousand people with no problem.',
   tentPhilosophy: 'I’m just looking to stand under the tent and not be the tent. What can I do inside of that tent for my community that can better everybody? If I can help move the tent just a little wider so that more people can be under that tent, that’s what matters.',
@@ -48,7 +60,7 @@ export const GIBRAN_BIO = {
     impact: 'Building creative development programs for inner-city youth from middle school to college graduates.',
   },
   eventSpecializations: [
-    'Providence Riverfront Sunset Decks (The Hot Club, Fish Co)',
+    'Riverfront & Coastal Sunset Decks (The Hot Club, Newport)',
     'Weddings & Full-Day Receptions (Ceremony, Cocktail & Party)',
     'Sweet 15s (Quinceañeras) & Sweet 16s',
     'High-Capacity Nightclub & Lounge Residencies',
@@ -80,7 +92,6 @@ export const GIBRAN_BIO = {
     { name: 'Electro-Voice (EV) High-Wattage PA', detail: 'Rugged Weatherproof Active Sound (200+ Person Coverage per Cabinet)' },
     { name: 'Electro-Voice (EV) 12" Subwoofer', detail: 'Deep Low-End Punch for Indoor Club & Open-Air Waterfront Decks' },
     { name: 'Chauvet DJ GigBAR Moving Heads', detail: 'Dynamic Intelligent Room Lighting with Wireless Control' },
-    { name: 'Real-Time Stems Isolation', detail: 'Live Acapella & Beat Separation for On-The-Fly Mashups & Edits' },
   ],
 };
 
@@ -114,7 +125,7 @@ export const SOUND_PILLARS = [
     title: 'Dance Classics & Waterfront Vibes',
     tag: 'Summer Sessions',
     color: '#10B981',
-    description: 'Sunset deck grooves for Providence waterfront staples like The Hot Club & Fish Co. Funky, feel-good, open-air energy.',
+    description: 'Sunset deck grooves for premier coastal and riverfront staples like The Hot Club & Newport. Funky, feel-good, open-air energy.',
     vibe: '115 - 124 BPM • Sunsets to Nights',
   },
   {
@@ -195,12 +206,12 @@ export const RESIDENCIES = [
     features: ['Waterfront Deck Parties', 'Annual NYE Headliner', 'Sunset to 2 AM'],
   },
   {
-    name: 'The Fish Company (Fish Co)',
-    location: 'Waterfront District, Providence, RI',
-    type: 'High-Capacity Club & Patio Residency',
-    tag: 'PVD Nightlife Staple',
-    description: 'Massive outdoor waterfront patio and high-octane indoor dance floor known for energetic college and summer weekend crowds.',
-    features: ['High-Energy Open Format', 'Summer Weekend Series', '1,000+ Capacity'],
+    name: 'Newport Coastal Circuit',
+    location: 'Newport, RI',
+    type: 'Coastal Headliner & Waterfront Sessions',
+    tag: 'Coastal Nightlife',
+    description: 'Premier coastal events, luxury summer sunset deck sessions, and high-energy nightlife throughout historic Newport.',
+    features: ['Waterfront Deck Sets', 'Summer Sunset Series', 'Luxury Event Sound'],
   },
   {
     name: 'Cafe Ava',
@@ -340,11 +351,11 @@ export const TOUR_DATES_2026 = [
   {
     date: 'JUNE 19, 2026',
     day: 'FRIDAY',
-    event: 'High-Energy Patio Kickoff',
-    venue: 'The Fish Company (Fish Co)',
-    location: 'Waterfront District, Providence, RI',
+    event: 'Newport Coastal Sunset Sessions',
+    venue: 'Newport Waterfront Circuit',
+    location: 'Newport, RI',
     time: '9:00 PM – 2:00 AM',
-    genre: 'Open-Format & Club Anthems',
+    genre: 'House & Open-Format Dance',
     status: 'CONFIRMED',
     tagColor: '#06B6D4',
   },

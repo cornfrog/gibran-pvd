@@ -15,7 +15,7 @@ import {
   Place as PlaceIcon,
   ConfirmationNumber as PassIcon,
 } from '@mui/icons-material';
-import { RESIDENCIES, TOUR_ARTISTS } from '../data/djData';
+import { RESIDENCIES, TOUR_ARTISTS, CIRCUIT_CITIES } from '../data/djData';
 
 export default function ResidenciesSection() {
   return (
@@ -124,8 +124,48 @@ export default function ResidenciesSection() {
                 display: 'block',
               }}
             >
-              The heartbeat of Rhode Island nightlife—headlining premier waterfront river decks, cultural institutions, and high-capacity club staples.
+              The heartbeat of Rhode Island nightlife—headlining premier waterfront river decks, cultural institutions, and regional circuits.
             </Typography>
+
+            {/* Active Tour & Performance Circuit Pill Track */}
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+                gap: { xs: 0.8, sm: 1 },
+                mt: 2.8,
+                maxWidth: 820,
+                mx: 'auto',
+              }}
+            >
+              <Typography variant="caption" sx={{ color: '#FFC700', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', mr: 0.5, fontSize: { xs: '0.68rem', sm: '0.72rem' } }}>
+                PERFORMANCE CIRCUIT:
+              </Typography>
+              {CIRCUIT_CITIES.map((city) => (
+                <Chip
+                  key={city}
+                  label={city}
+                  size="small"
+                  sx={{
+                    backgroundColor: 'rgba(255, 199, 0, 0.08)',
+                    borderColor: 'rgba(255, 199, 0, 0.3)',
+                    color: '#EDE7CB',
+                    fontWeight: 800,
+                    fontSize: { xs: '0.68rem', sm: '0.74rem' },
+                    border: '1px solid',
+                    transition: 'all 0.2s ease',
+                    '&:hover': {
+                      backgroundColor: 'rgba(255, 199, 0, 0.2)',
+                      borderColor: '#FFC700',
+                      color: '#FFC700',
+                      transform: 'translateY(-1px)',
+                    },
+                  }}
+                />
+              ))}
+            </Box>
           </Box>
 
           {/* Residencies Grid */}

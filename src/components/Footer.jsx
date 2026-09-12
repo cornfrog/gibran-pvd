@@ -63,7 +63,7 @@ export default function Footer() {
               <Box
                 component="img"
                 src="/banner.png"
-                alt="GibranPVD - Good People"
+                alt="Good People - GibranPVD"
                 sx={{
                   height: { xs: '40px', sm: '52px' },
                   width: 'auto',
@@ -91,6 +91,7 @@ export default function Footer() {
               {[
                 { label: 'Sound Profile', id: 'sound' },
                 { label: 'Live Sets', id: 'mixes' },
+                { label: 'Media Vault', id: 'gallery' },
                 { label: 'Providence Residencies', id: 'residencies' },
                 { label: 'Tour Stage Credits', id: 'tours' },
                 { label: 'Book Event Inquiry', id: 'booking' },
@@ -151,7 +152,7 @@ export default function Footer() {
             </Box>
 
             <Typography variant="body2" sx={{ color: 'rgba(253, 251, 240, 0.65)', fontSize: '0.82rem' }}>
-              Direct Booking: <span style={{ color: '#FFC700', fontWeight: 700 }}>gibran@me.com</span>
+              Direct Booking: <span style={{ color: '#FFC700', fontWeight: 700 }}>goodpeoplepvd@gmail.com</span>
             </Typography>
           </Box>
         </Box>
