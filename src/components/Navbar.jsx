@@ -17,6 +17,7 @@ import {
   Close as CloseIcon,
   GraphicEq as GraphicEqIcon,
   QueueMusic as QueueMusicIcon,
+  Collections as CollectionsIcon,
   LocationCity as LocationCityIcon,
   Mic as MicIcon,
   Facebook as FacebookIcon,
@@ -29,9 +30,10 @@ import { DJ_PROFILE } from '../data/djData';
 const NAV_LINKS = [
   { num: '01', label: 'Sound Profile', href: '#sound', icon: <GraphicEqIcon sx={{ fontSize: 18 }} /> },
   { num: '02', label: 'Live Sets', href: '#mixes', icon: <QueueMusicIcon sx={{ fontSize: 18 }} /> },
-  { num: '03', label: 'Venues', href: '#residencies', icon: <LocationCityIcon sx={{ fontSize: 18 }} /> },
-  { num: '04', label: 'Tour MC', href: '#tours', icon: <MicIcon sx={{ fontSize: 18 }} /> },
-  { num: '05', label: 'Book Event', href: '#booking', icon: <EventAvailableIcon sx={{ fontSize: 18 }} /> },
+  { num: '03', label: 'Media', href: '#gallery', icon: <CollectionsIcon sx={{ fontSize: 18 }} /> },
+  { num: '04', label: 'Venues', href: '#residencies', icon: <LocationCityIcon sx={{ fontSize: 18 }} /> },
+  { num: '05', label: 'Tour MC', href: '#tours', icon: <MicIcon sx={{ fontSize: 18 }} /> },
+  { num: '06', label: 'Book Event', href: '#booking', icon: <EventAvailableIcon sx={{ fontSize: 18 }} /> },
 ];
 
 export default function Navbar() {
@@ -65,6 +67,7 @@ export default function Navbar() {
         { id: 'booking', threshold: 0.65 },
         { id: 'tours', threshold: 0.50 },
         { id: 'residencies', threshold: 0.50 },
+        { id: 'gallery', threshold: 0.50 },
         { id: 'mixes', threshold: 0.50 },
         { id: 'sound', threshold: 0.50 },
       ];

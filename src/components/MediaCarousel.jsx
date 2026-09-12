@@ -13,14 +13,10 @@ import {
   ArrowBackIosNew as PrevIcon,
   ArrowForwardIos as NextIcon,
   PlayArrow as PlayIcon,
-  Pause as PauseIcon,
   Fullscreen as FullscreenIcon,
   Close as CloseIcon,
   PhotoCamera as PhotoCameraIcon,
   Videocam as VideocamIcon,
-  Place as PlaceIcon,
-  CalendarToday as CalendarTodayIcon,
-  Collections as CollectionsIcon,
 } from '@mui/icons-material';
 import { MEDIA_ITEMS } from '../data/mediaContent';
 
@@ -165,35 +161,6 @@ export default function MediaCarousel() {
             mx: 'auto',
           }}
         >
-          <Box
-            sx={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 0.8,
-              py: 0.7,
-              px: 1.8,
-              mb: 1.8,
-              borderRadius: '50px',
-              backgroundColor: 'rgba(255, 199, 0, 0.08)',
-              border: '1px solid rgba(255, 199, 0, 0.35)',
-            }}
-          >
-            <CollectionsIcon sx={{ color: '#FFC700', fontSize: 16 }} />
-            <Typography
-              sx={{
-                color: '#FFC700',
-                fontWeight: 800,
-                fontSize: { xs: '0.66rem', sm: '0.74rem' },
-                letterSpacing: '0.06em',
-                lineHeight: 1,
-                textTransform: 'uppercase',
-              }}
-            >
-              LIVE CONTENT VAULT
-            </Typography>
-          </Box>
-
           <Typography
             variant="h2"
             component="h2"
@@ -206,20 +173,7 @@ export default function MediaCarousel() {
               color: '#FDFBF0',
             }}
           >
-            PHOTOS & <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>VIDEO REELS</span>
-          </Typography>
-
-          <Typography
-            variant="body1"
-            sx={{
-              color: 'rgba(253, 251, 240, 0.75)',
-              fontSize: { xs: '0.88rem', sm: '1rem', md: '1.05rem' },
-              lineHeight: 1.6,
-              maxWidth: 680,
-              mx: 'auto',
-            }}
-          >
-            Curated visual archives from Providence riverfront deck parties, Newport coastal celebrations, and national tour stages. Dynamically loaded from content folders.
+            PHOTOS &amp; <span style={{ color: '#FFC700', textShadow: '0 0 30px rgba(255, 199, 0, 0.35)' }}>VIDEOS</span>
           </Typography>
 
           {/* Filter Pills */}
@@ -374,101 +328,55 @@ export default function MediaCarousel() {
               </Box>
             )}
 
-            {/* Gradient Scrim Overlay at Bottom for text readability */}
-            <Box
-              sx={{
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                right: 0,
-                height: { xs: 160, sm: 190 },
-                background: 'linear-gradient(to top, rgba(9, 9, 9, 0.96) 0%, rgba(9, 9, 9, 0.6) 60%, transparent 100%)',
-                pointerEvents: 'none',
-              }}
-            />
-
-            {/* Top Bar Badges: Category & Index Counter */}
+            {/* Top Right Controls: Fullscreen & Index Counter */}
             <Box
               sx={{
                 position: 'absolute',
                 top: { xs: 14, sm: 20 },
-                left: { xs: 14, sm: 20 },
                 right: { xs: 14, sm: 20 },
                 display: 'flex',
-                justifyContent: 'space-between',
+                gap: 1,
                 alignItems: 'center',
                 zIndex: 2,
-                pointerEvents: 'none',
               }}
             >
-              <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', pointerEvents: 'auto' }}>
-                <Chip
-                  icon={currentItem.type === 'image' ? <PhotoCameraIcon sx={{ fontSize: 14 }} /> : <VideocamIcon sx={{ fontSize: 14 }} />}
-                  label={currentItem.category}
+              {currentItem.type === 'image' && (
+                <IconButton
                   size="small"
+                  onClick={() => setLightboxOpen(true)}
+                  aria-label="View Fullscreen"
                   sx={{
-                    backgroundColor: 'rgba(11, 11, 11, 0.85)',
+                    backgroundColor: 'rgba(11, 11, 11, 0.8)',
                     backdropFilter: 'blur(10px)',
-                    color: '#FFC700',
-                    fontWeight: 800,
-                    fontSize: { xs: '0.64rem', sm: '0.72rem' },
-                    border: '1px solid rgba(255, 199, 0, 0.4)',
-                    boxShadow: '0 4px 14px rgba(0, 0, 0, 0.6)',
-                  }}
-                />
-                <Chip
-                  label={currentItem.type.toUpperCase()}
-                  size="small"
-                  sx={{
-                    backgroundColor: 'rgba(255, 199, 0, 0.15)',
                     color: '#EDE7CB',
-                    fontWeight: 800,
-                    fontSize: '0.62rem',
-                    border: '1px solid rgba(255, 199, 0, 0.3)',
-                    display: { xs: 'none', sm: 'inline-flex' },
-                  }}
-                />
-              </Box>
-
-              <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', pointerEvents: 'auto' }}>
-                {currentItem.type === 'image' && (
-                  <IconButton
-                    size="small"
-                    onClick={() => setLightboxOpen(true)}
-                    aria-label="View Fullscreen"
-                    sx={{
-                      backgroundColor: 'rgba(11, 11, 11, 0.8)',
-                      backdropFilter: 'blur(10px)',
-                      color: '#EDE7CB',
-                      border: '1px solid rgba(253, 251, 240, 0.15)',
-                      width: 36,
-                      height: 36,
-                      '&:hover': {
-                        backgroundColor: '#FFC700',
-                        color: '#0B0B0B',
-                      },
-                    }}
-                  >
-                    <FullscreenIcon sx={{ fontSize: 20 }} />
-                  </IconButton>
-                )}
-                <Box
-                  sx={{
-                    px: 1.5,
-                    py: 0.5,
-                    borderRadius: 2,
-                    backgroundColor: 'rgba(11, 11, 11, 0.85)',
-                    backdropFilter: 'blur(10px)',
                     border: '1px solid rgba(253, 251, 240, 0.15)',
-                    color: '#FFC700',
-                    fontWeight: 900,
-                    fontFamily: '"Syne", sans-serif',
-                    fontSize: { xs: '0.72rem', sm: '0.82rem' },
-                    letterSpacing: '0.04em',
+                    width: 36,
+                    height: 36,
+                    '&:hover': {
+                      backgroundColor: '#FFC700',
+                      color: '#0B0B0B',
+                    },
                   }}
                 >
-                  {String(currentIndex + 1).padStart(2, '0')} / {String(filteredItems.length).padStart(2, '0')}
-                </Box>
+                  <FullscreenIcon sx={{ fontSize: 20 }} />
+                </IconButton>
+              )}
+              <Box
+                sx={{
+                  px: 1.5,
+                  py: 0.5,
+                  borderRadius: 2,
+                  backgroundColor: 'rgba(11, 11, 11, 0.85)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(253, 251, 240, 0.15)',
+                  color: '#FFC700',
+                  fontWeight: 900,
+                  fontFamily: '"Syne", sans-serif',
+                  fontSize: { xs: '0.72rem', sm: '0.82rem' },
+                  letterSpacing: '0.04em',
+                }}
+              >
+                {String(currentIndex + 1).padStart(2, '0')} / {String(filteredItems.length).padStart(2, '0')}
               </Box>
             </Box>
 
@@ -532,62 +440,6 @@ export default function MediaCarousel() {
             >
               <NextIcon sx={{ fontSize: { xs: 18, sm: 22 }, ml: 0.2 }} />
             </IconButton>
-
-            {/* Bottom Caption Overlay */}
-            <Box
-              sx={{
-                position: 'absolute',
-                bottom: { xs: 14, sm: 22 },
-                left: { xs: 16, sm: 28 },
-                right: { xs: 16, sm: 28 },
-                zIndex: 2,
-              }}
-            >
-              <Typography
-                variant="h4"
-                sx={{
-                  fontWeight: 900,
-                  color: '#FDFBF0',
-                  fontSize: { xs: '1.15rem', sm: '1.55rem', md: '1.85rem' },
-                  lineHeight: 1.2,
-                  mb: 0.5,
-                  textShadow: '0 2px 14px rgba(0, 0, 0, 0.9)',
-                }}
-              >
-                {currentItem.title}
-              </Typography>
-
-              <Typography
-                variant="body2"
-                sx={{
-                  color: 'rgba(253, 251, 240, 0.85)',
-                  fontSize: { xs: '0.78rem', sm: '0.92rem' },
-                  lineHeight: 1.5,
-                  maxWidth: 720,
-                  mb: 1.2,
-                  display: { xs: 'none', sm: 'block' },
-                  textShadow: '0 2px 10px rgba(0,0,0,0.8)',
-                }}
-              >
-                {currentItem.caption}
-              </Typography>
-
-              {/* Location & Meta info */}
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, flexWrap: 'wrap' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, color: '#FFC700' }}>
-                  <PlaceIcon sx={{ fontSize: 15 }} />
-                  <Typography variant="caption" sx={{ fontWeight: 800, fontSize: '0.74rem' }}>
-                    {currentItem.location}
-                  </Typography>
-                </Box>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, color: 'rgba(253, 251, 240, 0.6)' }}>
-                  <CalendarTodayIcon sx={{ fontSize: 13 }} />
-                  <Typography variant="caption" sx={{ fontWeight: 600, fontSize: '0.72rem' }}>
-                    {currentItem.date}
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
           </Box>
 
           {/* BOTTOM THUMBNAIL TRACK */}
@@ -769,15 +621,6 @@ export default function MediaCarousel() {
               }}
             />
           )}
-
-          <Box sx={{ mt: 1.5, textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ color: '#FDFBF0', fontWeight: 900 }}>
-              {currentItem.title}
-            </Typography>
-            <Typography variant="caption" sx={{ color: '#FFC700', fontWeight: 700 }}>
-              {currentItem.location} • {currentItem.date}
-            </Typography>
-          </Box>
         </DialogContent>
       </Dialog>
     </Box>
